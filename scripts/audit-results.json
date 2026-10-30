@@ -1,0 +1,168 @@
+{
+  "skipper1.tsx": [
+    {
+      "type": "SSR_GLOBAL_TRAP",
+      "items": [
+        {
+          "line": 192,
+          "text": "const scrollableDist = document.documentElement.scrollHeight - window.innerHeight;"
+        },
+        {
+          "line": 231,
+          "text": "const scrollableDist = document.documentElement.scrollHeight - window.innerHeight;"
+        }
+      ]
+    }
+  ],
+  "skipper5.tsx": [
+    {
+      "type": "SSR_GLOBAL_TRAP",
+      "items": [
+        {
+          "line": 256,
+          "text": "const viewW = window.innerWidth * (1 + buffer);"
+        },
+        {
+          "line": 257,
+          "text": "const viewH = window.innerHeight * (1 + buffer);"
+        }
+      ]
+    }
+  ],
+  "skipper12.tsx": [
+    {
+      "type": "SSR_GLOBAL_TRAP",
+      "items": [
+        {
+          "line": 183,
+          "text": "const w = window.innerWidth;"
+        },
+        {
+          "line": 184,
+          "text": "const h = window.innerHeight;"
+        }
+      ]
+    }
+  ],
+  "skipper21.tsx": [
+    {
+      "type": "SSR_GLOBAL_TRAP",
+      "items": [
+        {
+          "line": 384,
+          "text": "const nextEl = document.getElementById(`otp-email-${idx + 1}`);"
+        },
+        {
+          "line": 438,
+          "text": "const nextEl = document.getElementById(`otp-phone-${idx + 1}`);"
+        }
+      ]
+    }
+  ],
+  "skipper24.tsx": [
+    {
+      "type": "SSR_GLOBAL_TRAP",
+      "items": [
+        {
+          "line": 174,
+          "text": "const scrollY = window.scrollY;"
+        }
+      ]
+    }
+  ],
+  "skipper26.tsx": [
+    {
+      "type": "SSR_GLOBAL_TRAP",
+      "items": [
+        {
+          "line": 219,
+          "text": "let style = document.getElementById(styleId);"
+        },
+        {
+          "line": 246,
+          "text": "const docWithVT = document as DocumentWithViewTransition;"
+        }
+      ]
+    }
+  ],
+  "skipper35.tsx": [
+    {
+      "type": "SSR_GLOBAL_TRAP",
+      "items": [
+        {
+          "line": 40,
+          "text": "const mediaQuery = window.matchMedia(\"(max-width: 767px)\");"
+        }
+      ]
+    }
+  ],
+  "skipper39.tsx": [
+    {
+      "type": "SSR_GLOBAL_TRAP",
+      "items": [
+        {
+          "line": 85,
+          "text": "const img = document.createElement(\"img\");"
+        },
+        {
+          "line": 139,
+          "text": "const dpr = window.devicePixelRatio || 1;"
+        },
+        {
+          "line": 147,
+          "text": "const dpr = window.devicePixelRatio || 1;"
+        }
+      ]
+    }
+  ],
+  "skipper42.tsx": [
+    {
+      "type": "TIMEOUT_LEAK",
+      "detail": "setTimeout in useEffect (2x) but no clearTimeout"
+    }
+  ],
+  "skipper59.tsx": [
+    {
+      "type": "SSR_GLOBAL_TRAP",
+      "items": [
+        {
+          "line": 91,
+          "text": "const dpr = window.devicePixelRatio || 1;"
+        }
+      ]
+    }
+  ],
+  "skipper76.tsx": [
+    {
+      "type": "SSR_GLOBAL_TRAP",
+      "items": [
+        {
+          "line": 21,
+          "text": "const m = window.matchMedia(\"(max-width: 768px)\");"
+        }
+      ]
+    }
+  ],
+  "skipper92.tsx": [
+    {
+      "type": "SSR_GLOBAL_TRAP",
+      "items": [
+        {
+          "line": 70,
+          "text": "const activeEl = document.activeElement;"
+        }
+      ]
+    }
+  ],
+  "skipper106.tsx": [
+    {
+      "type": "SSR_GLOBAL_TRAP",
+      "items": [
+        {
+          "line": 63,
+          "text": "const style = window.getComputedStyle(input);"
+        }
+      ]
+    }
+  ]
+}

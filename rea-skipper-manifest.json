@@ -1,0 +1,1633 @@
+[
+  {
+    "id": "skipper1",
+    "specUrl": "https://skipper-ui.com/v1/skipper1",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper1",
+    "title": "Anime js scrollbar",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper1.json",
+    "outputFile": "src/components/v1/skipper1.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Added observer.disconnect() in cleanup to ensure complete IntersectionObserver teardown; migrated hoverX from useState to useMotionValue to prevent re-render thrashing during high-frequency mousemove."
+  },
+  {
+    "id": "skipper2",
+    "specUrl": "https://skipper-ui.com/v1/skipper2",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper2",
+    "title": "Dynamic island",
+    "dependencies": [
+      "framer-motion",
+      "lucide-react"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper2.json",
+    "outputFile": "src/components/v1/skipper2.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper3",
+    "specUrl": "https://skipper-ui.com/v1/skipper3",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper3",
+    "title": "Apple play button",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper3.json",
+    "outputFile": "src/components/v1/skipper3.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper4",
+    "specUrl": "https://skipper-ui.com/v1/skipper4",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper4",
+    "title": "Theme toggle buttons",
+    "dependencies": [
+      "framer-motion",
+      "lucide-react"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper4.json",
+    "outputFile": "src/components/v1/skipper4.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper5",
+    "specUrl": "https://skipper-ui.com/v1/skipper5",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper5",
+    "title": "Things drag and scroll",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper5.json",
+    "outputFile": "src/components/v1/skipper5.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper6",
+    "specUrl": "https://skipper-ui.com/v1/skipper6",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper6",
+    "title": "Hover members",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper6.json",
+    "outputFile": "src/components/v1/skipper6.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper7",
+    "specUrl": "https://skipper-ui.com/v1/skipper7",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper7",
+    "title": "Nike preloader",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper7.json",
+    "outputFile": "src/components/v1/skipper7.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper8",
+    "specUrl": "https://skipper-ui.com/v1/skipper8",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper8",
+    "title": "Words preloader",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper8.json",
+    "outputFile": "src/components/v1/skipper8.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper9",
+    "specUrl": "https://skipper-ui.com/v1/skipper9",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper9",
+    "title": "Stairs preloader",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper9.json",
+    "outputFile": "src/components/v1/skipper9.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper10",
+    "specUrl": "https://skipper-ui.com/v1/skipper10",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper10",
+    "title": "Double stairs preloader",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper10.json",
+    "outputFile": "src/components/v1/skipper10.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper11",
+    "specUrl": "https://skipper-ui.com/v1/skipper11",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper11",
+    "title": "Pixel preloader",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper11.json",
+    "outputFile": "src/components/v1/skipper11.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper12",
+    "specUrl": "https://skipper-ui.com/v1/skipper12",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper12",
+    "title": "Vercel Liquid simulation",
+    "dependencies": [
+      "framer-motion",
+      "three.js"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper12.json",
+    "outputFile": "src/components/v1/skipper12.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper13",
+    "specUrl": "https://skipper-ui.com/v1/skipper13",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper13",
+    "title": "Nike menu",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper13.json",
+    "outputFile": "src/components/v1/skipper13.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper14",
+    "specUrl": "https://skipper-ui.com/v1/skipper14",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper14",
+    "title": "Ascii Simulation",
+    "dependencies": [
+      "framer-motion",
+      "three.js"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper14.json",
+    "outputFile": "src/components/v1/skipper14.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper15",
+    "specUrl": "https://skipper-ui.com/v1/skipper15",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper15",
+    "title": "Box loading preloader",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper15.json",
+    "outputFile": "src/components/v1/skipper15.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper16",
+    "specUrl": "https://skipper-ui.com/v1/skipper16",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper16",
+    "title": "Card stack scroll",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper16.json",
+    "outputFile": "src/components/v1/skipper16.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper17",
+    "specUrl": "https://skipper-ui.com/v1/skipper17",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper17",
+    "title": "Card stack with gsap and rotate",
+    "dependencies": [
+      "gsap",
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper17.json",
+    "outputFile": "src/components/v1/skipper17.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper18",
+    "specUrl": "https://skipper-ui.com/v1/skipper18",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper18",
+    "title": "Image cursor trail",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper18.json",
+    "outputFile": "src/components/v1/skipper18.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper19",
+    "specUrl": "https://skipper-ui.com/v1/skipper19",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper19",
+    "title": "Svg follow scroll",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper19.json",
+    "outputFile": "src/components/v1/skipper19.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper20",
+    "specUrl": "https://skipper-ui.com/v1/skipper20",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper20",
+    "title": "UniSwap Country Dialog",
+    "dependencies": [
+      "framer-motion",
+      "@tanstack/react-query",
+      "lucide-react"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper20.json",
+    "outputFile": "src/components/v1/skipper20.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper21",
+    "specUrl": "https://skipper-ui.com/v1/skipper21",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper21",
+    "title": "Family wallet",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper21.json",
+    "outputFile": "src/components/v1/skipper21.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Strongly typed MovingBorderProps with React.SVGProps<SVGSVGElement> and ButtonProps with React.ButtonHTMLAttributes<HTMLButtonElement> & React.ElementType, eliminating all : any annotations."
+  },
+  {
+    "id": "skipper22",
+    "specUrl": "https://skipper-ui.com/v1/skipper22",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper22",
+    "title": "Aave token swap",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper22.json",
+    "outputFile": "src/components/v1/skipper22.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper23",
+    "specUrl": "https://skipper-ui.com/v1/skipper23",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper23",
+    "title": "Minimal Card Expand",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper23.json",
+    "outputFile": "src/components/v1/skipper23.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper24",
+    "specUrl": "https://skipper-ui.com/v1/skipper24",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper24",
+    "title": "Tik tik color list",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper24.json",
+    "outputFile": "src/components/v1/skipper24.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Added fetchTimerRef cleanup (clearTimeout) on unmount so pending infinite scroll debounce timers do not perform state updates after component unmount."
+  },
+  {
+    "id": "skipper25",
+    "specUrl": "https://skipper-ui.com/v1/skipper25",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper25",
+    "title": "Music toggle btn",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper25.json",
+    "outputFile": "src/components/v1/skipper25.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper26",
+    "specUrl": "https://skipper-ui.com/v1/skipper26",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper26",
+    "title": "Theme toggle btn",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper26.json",
+    "outputFile": "src/components/v1/skipper26.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Strongly typed DocumentWithViewTransition to eliminate (document as any).startViewTransition casts while preserving native view transitions."
+  },
+  {
+    "id": "skipper27",
+    "specUrl": "https://skipper-ui.com/v1/skipper27",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper27",
+    "title": "Rolling text",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper27.json",
+    "outputFile": "src/components/v1/skipper27.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper28",
+    "specUrl": "https://skipper-ui.com/v1/skipper28",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper28",
+    "title": "3D perspective text",
+    "dependencies": [
+      "framer-motion",
+      "three.js"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper28.json",
+    "outputFile": "src/components/v1/skipper28.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper29",
+    "specUrl": "https://skipper-ui.com/v1/skipper29",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper29",
+    "title": "Siena parallax",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper29.json",
+    "outputFile": "src/components/v1/skipper29.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper30",
+    "specUrl": "https://skipper-ui.com/v1/skipper30",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper30",
+    "title": "Oliver parallax",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper30.json",
+    "outputFile": "src/components/v1/skipper30.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper31",
+    "specUrl": "https://skipper-ui.com/v1/skipper31",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper31",
+    "title": "Text Scroll animation",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper31.json",
+    "outputFile": "src/components/v1/skipper31.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper32",
+    "specUrl": "https://skipper-ui.com/v1/skipper32",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper32",
+    "title": "Scroll images reveal 001",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper32.json",
+    "outputFile": "src/components/v1/skipper32.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper33",
+    "specUrl": "https://skipper-ui.com/v1/skipper33",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper33",
+    "title": "Scroll images reveal 002",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper33.json",
+    "outputFile": "src/components/v1/skipper33.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper34",
+    "specUrl": "https://skipper-ui.com/v1/skipper34",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper34",
+    "title": "Scroll images reveal 003",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper34.json",
+    "outputFile": "src/components/v1/skipper34.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper35",
+    "specUrl": "https://skipper-ui.com/v1/skipper35",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper35",
+    "title": "Hover expand",
+    "dependencies": [
+      "gsap",
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper35.json",
+    "outputFile": "src/components/v1/skipper35.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper36",
+    "specUrl": "https://skipper-ui.com/v1/skipper36",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper36",
+    "title": "Interactive3d Hero",
+    "dependencies": [
+      "framer-motion",
+      "three.js",
+      "react-three-fiber"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper36.json",
+    "outputFile": "src/components/v1/skipper36.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Added controls.removeEventListener('change', render) cleanup prior to OrbitControls.dispose() to prevent dangling camera change callbacks."
+  },
+  {
+    "id": "skipper37",
+    "specUrl": "https://skipper-ui.com/v1/skipper37",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper37",
+    "title": "Animated number",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper37.json",
+    "outputFile": "src/components/v1/skipper37.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper38",
+    "specUrl": "https://skipper-ui.com/v1/skipper38",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper38",
+    "title": "Apple Navbar V001",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper38.json",
+    "outputFile": "src/components/v1/skipper38.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper39",
+    "specUrl": "https://skipper-ui.com/v1/skipper39",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper39",
+    "title": "Canvas crowd",
+    "dependencies": [
+      "framer-motion",
+      "canvas"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper39.json",
+    "outputFile": "src/components/v1/skipper39.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Strongly typed randomIndex and removeRandom helpers using generic <T,>(arr: T[]) to eliminate all any[] parameters."
+  },
+  {
+    "id": "skipper40",
+    "specUrl": "https://skipper-ui.com/v1/skipper40",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper40",
+    "title": "CssLink",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper40.json",
+    "outputFile": "src/components/v1/skipper40.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper41",
+    "specUrl": "https://skipper-ui.com/v1/skipper41",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper41",
+    "title": "Progressive Blur",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper41.json",
+    "outputFile": "src/components/v1/skipper41.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper42",
+    "specUrl": "https://skipper-ui.com/v1/skipper42",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper42",
+    "title": "Animated icons 001",
+    "dependencies": [
+      "framer-motion",
+      "lucide-react"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper42.json",
+    "outputFile": "src/components/v1/skipper42.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper43",
+    "specUrl": "https://skipper-ui.com/v1/skipper43",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper43",
+    "title": "Vercel Tooltip",
+    "dependencies": [
+      "framer-motion",
+      "lucide-react"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper43.json",
+    "outputFile": "src/components/v1/skipper43.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper44",
+    "specUrl": "https://skipper-ui.com/v1/skipper44",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper44",
+    "title": "Vercel scroll with blur",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper44.json",
+    "outputFile": "src/components/v1/skipper44.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper45",
+    "specUrl": "https://skipper-ui.com/v1/skipper45",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper45",
+    "title": "Family Receive button",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper45.json",
+    "outputFile": "src/components/v1/skipper45.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper46",
+    "specUrl": "https://skipper-ui.com/v1/skipper46",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper46",
+    "title": "Nextjs gooey menu",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper46.json",
+    "outputFile": "src/components/v1/skipper46.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper47",
+    "specUrl": "https://skipper-ui.com/v1/skipper47",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper47",
+    "title": "Perspective carousel",
+    "dependencies": [
+      "swiper",
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper47.json",
+    "outputFile": "src/components/v1/skipper47.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper48",
+    "specUrl": "https://skipper-ui.com/v1/skipper48",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper48",
+    "title": "Card swipe carousel",
+    "dependencies": [
+      "swiper",
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper48.json",
+    "outputFile": "src/components/v1/skipper48.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper49",
+    "specUrl": "https://skipper-ui.com/v1/skipper49",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper49",
+    "title": "Inverted perspective carousel",
+    "dependencies": [
+      "swiper",
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper49.json",
+    "outputFile": "src/components/v1/skipper49.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper50",
+    "specUrl": "https://skipper-ui.com/v1/skipper50",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper50",
+    "title": "Creative carousel 001",
+    "dependencies": [
+      "swiper",
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper50.json",
+    "outputFile": "src/components/v1/skipper50.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper51",
+    "specUrl": "https://skipper-ui.com/v1/skipper51",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper51",
+    "title": "Creative carousel 002",
+    "dependencies": [
+      "swiper",
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper51.json",
+    "outputFile": "src/components/v1/skipper51.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper52",
+    "specUrl": "https://skipper-ui.com/v1/skipper52",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper52",
+    "title": "ExpandOnHover",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper52.json",
+    "outputFile": "src/components/v1/skipper52.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper53",
+    "specUrl": "https://skipper-ui.com/v1/skipper53",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper53",
+    "title": "ExpandOnHover vertical",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper53.json",
+    "outputFile": "src/components/v1/skipper53.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper54",
+    "specUrl": "https://skipper-ui.com/v1/skipper54",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper54",
+    "title": "Shadcn clipPath Carousal",
+    "dependencies": [
+      "framer-motion",
+      "@/components/ui"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper54.json",
+    "outputFile": "src/components/v1/skipper54.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper55",
+    "specUrl": "https://skipper-ui.com/v1/skipper55",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper55",
+    "title": "Parallax Image",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper55.json",
+    "outputFile": "src/components/v1/skipper55.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper56",
+    "specUrl": "https://skipper-ui.com/v1/skipper56",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper56",
+    "title": "Devouring details sign in",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper56.json",
+    "outputFile": "src/components/v1/skipper56.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Stored recursive requestAnimationFrame handle in rafRef and added cancelAnimationFrame(rafRef.current) upon component unmount."
+  },
+  {
+    "id": "skipper57",
+    "specUrl": "https://skipper-ui.com/v1/skipper57",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper57",
+    "title": "Vercel navigation bar",
+    "dependencies": [
+      "framer-motion",
+      "lucide-react"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper57.json",
+    "outputFile": "src/components/v1/skipper57.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper58",
+    "specUrl": "https://skipper-ui.com/v1/skipper58",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper58",
+    "title": "Text roll navigation",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper58.json",
+    "outputFile": "src/components/v1/skipper58.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper59",
+    "specUrl": "https://skipper-ui.com/v1/skipper59",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper59",
+    "title": "Drawing cursor effect",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper59.json",
+    "outputFile": "src/components/v1/skipper59.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper60",
+    "specUrl": "https://skipper-ui.com/v1/skipper60",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper60",
+    "title": "Side Scroll Navigation",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper60.json",
+    "outputFile": "src/components/v1/skipper60.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper61",
+    "specUrl": "https://skipper-ui.com/v1/skipper61",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper61",
+    "title": "Mouse follow animations",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper61.json",
+    "outputFile": "src/components/v1/skipper61.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper62",
+    "specUrl": "https://skipper-ui.com/v1/skipper62",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper62",
+    "title": "Loop animation hook",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper62.json",
+    "outputFile": "src/components/v1/skipper62.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper63",
+    "specUrl": "https://skipper-ui.com/v1/skipper63",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper63",
+    "title": "Apple squicircle effect",
+    "dependencies": [
+      "framer-motion",
+      "lucide-react"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper63.json",
+    "outputFile": "src/components/v1/skipper63.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper64",
+    "specUrl": "https://skipper-ui.com/v1/skipper64",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper64",
+    "title": "Gooey Effect",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper64.json",
+    "outputFile": "src/components/v1/skipper64.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper65",
+    "specUrl": "https://skipper-ui.com/v1/skipper65",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper65",
+    "title": "Breakpoint indicator",
+    "dependencies": [],
+    "evidenceBundlePath": "rea-evidence/skipper65.json",
+    "outputFile": "src/components/v1/skipper65.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper66",
+    "specUrl": "https://skipper-ui.com/v1/skipper66",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper66",
+    "title": "SVG clip path mask",
+    "dependencies": [],
+    "evidenceBundlePath": "rea-evidence/skipper66.json",
+    "outputFile": "src/components/v1/skipper66.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper67",
+    "specUrl": "https://skipper-ui.com/v1/skipper67",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper67",
+    "title": "Video player 001",
+    "dependencies": [
+      "framer-motion",
+      "media-chrome"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper67.json",
+    "outputFile": "src/components/v1/skipper67.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper68",
+    "specUrl": "https://skipper-ui.com/v1/skipper68",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper68",
+    "title": "Animated number input",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper68.json",
+    "outputFile": "src/components/v1/skipper68.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper69",
+    "specUrl": "https://skipper-ui.com/v1/skipper69",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper69",
+    "title": "Skipper Number flow",
+    "dependencies": [
+      "framer-motion",
+      "react-use-measure",
+      "lucide-react"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper69.json",
+    "outputFile": "src/components/v1/skipper69.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper70",
+    "specUrl": "https://skipper-ui.com/v1/skipper70",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper70",
+    "title": "Text reveal box",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper70.json",
+    "outputFile": "src/components/v1/skipper70.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper71",
+    "specUrl": "https://skipper-ui.com/v1/skipper71",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper71",
+    "title": "Image reveal",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper71.json",
+    "outputFile": "src/components/v1/skipper71.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper72",
+    "specUrl": "https://skipper-ui.com/v1/skipper72",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper72",
+    "title": "Horizontal Text reveal ",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper72.json",
+    "outputFile": "src/components/v1/skipper72.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper73",
+    "specUrl": "https://skipper-ui.com/v1/skipper73",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper73",
+    "title": "Infinite canvas",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper73.json",
+    "outputFile": "src/components/v1/skipper73.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper74",
+    "specUrl": "https://skipper-ui.com/v1/skipper74",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper74",
+    "title": "Timeline calendar",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper74.json",
+    "outputFile": "src/components/v1/skipper74.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper75",
+    "specUrl": "https://skipper-ui.com/v1/skipper75",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper75",
+    "title": "Apple Navbar V002",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper75.json",
+    "outputFile": "src/components/v1/skipper75.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper76",
+    "specUrl": "https://skipper-ui.com/v1/skipper76",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper76",
+    "title": "Apple Feature Block",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper76.json",
+    "outputFile": "src/components/v1/skipper76.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper77",
+    "specUrl": "https://skipper-ui.com/v1/skipper77",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper77",
+    "title": "Apple carousel",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper77.json",
+    "outputFile": "src/components/v1/skipper77.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper78",
+    "specUrl": "https://skipper-ui.com/v1/skipper78",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper78",
+    "title": "Dia Browser's Carousal",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper78.json",
+    "outputFile": "src/components/v1/skipper78.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper79",
+    "specUrl": "https://skipper-ui.com/v1/skipper79",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper79",
+    "title": "Team showcase scroll",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper79.json",
+    "outputFile": "src/components/v1/skipper79.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper80",
+    "specUrl": "https://skipper-ui.com/v1/skipper80",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper80",
+    "title": "Projects Showcase",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper80.json",
+    "outputFile": "src/components/v1/skipper80.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper81",
+    "specUrl": "https://skipper-ui.com/v1/skipper81",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper81",
+    "title": "AI Input 001",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper81.json",
+    "outputFile": "src/components/v1/skipper81.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Added cancelAnimationFrame(rafId) cleanup return in useLayoutEffect to guard against scroll-into-view triggers after re-render/unmount."
+  },
+  {
+    "id": "skipper82",
+    "specUrl": "https://skipper-ui.com/v1/skipper82",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper82",
+    "title": "AI Input 002",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper82.json",
+    "outputFile": "src/components/v1/skipper82.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper83",
+    "specUrl": "https://skipper-ui.com/v1/skipper83",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper83",
+    "title": "AI Input 003",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper83.json",
+    "outputFile": "src/components/v1/skipper83.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper84",
+    "specUrl": "https://skipper-ui.com/v1/skipper84",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper84",
+    "title": "AI Input 004",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper84.json",
+    "outputFile": "src/components/v1/skipper84.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper85",
+    "specUrl": "https://skipper-ui.com/v1/skipper85",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper85",
+    "title": "AI Input 005",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper85.json",
+    "outputFile": "src/components/v1/skipper85.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Added cancelAnimationFrame(rafId) cleanup return in useLayoutEffect to prevent scroll-into-view triggers after component unmount."
+  },
+  {
+    "id": "skipper86",
+    "specUrl": "https://skipper-ui.com/v1/skipper86",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper86",
+    "title": "Apple Ai gradient",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper86.json",
+    "outputFile": "src/components/v1/skipper86.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper87",
+    "specUrl": "https://skipper-ui.com/v1/skipper87",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper87",
+    "title": "Scroll with fade effect",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper87.json",
+    "outputFile": "src/components/v1/skipper87.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper88",
+    "specUrl": "https://skipper-ui.com/v1/skipper88",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper88",
+    "title": "3D Rolling Text on scroll",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper88.json",
+    "outputFile": "src/components/v1/skipper88.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper89",
+    "specUrl": "https://skipper-ui.com/v1/skipper89",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper89",
+    "title": "Scroll progress 001",
+    "dependencies": [
+      "framer-motion",
+      "@number-flow/react"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper89.json",
+    "outputFile": "src/components/v1/skipper89.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper90",
+    "specUrl": "https://skipper-ui.com/v1/skipper90",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper90",
+    "title": "Gradient hover cards",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper90.json",
+    "outputFile": "src/components/v1/skipper90.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper91",
+    "specUrl": "https://skipper-ui.com/v1/skipper91",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper91",
+    "title": "video player 002 ",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper91.json",
+    "outputFile": "src/components/v1/skipper91.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Imported MotionValue from framer-motion and strongly typed PlayOverlay opacity and Scrubber currentTime & duration props, eliminating all : any annotations."
+  },
+  {
+    "id": "skipper92",
+    "specUrl": "https://skipper-ui.com/v1/skipper92",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper92",
+    "title": "Vercel Command Search",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper92.json",
+    "outputFile": "src/components/v1/skipper92.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Added CommandItem and CommandGroup interfaces to strongly type COMMAND_GROUPS, eliminating (item as any).shortcut cast."
+  },
+  {
+    "id": "skipper93",
+    "specUrl": "https://skipper-ui.com/v1/skipper93",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper93",
+    "title": "Gesture Field - Magnetic Constellation",
+    "dependencies": [
+      "framer-motion",
+      "lucide-react"
+    ],
+    "outputFile": "src/components/v1/skipper93.tsx",
+    "status": "upstream_404",
+    "verification": "not_applicable",
+    "openQuestions": [
+      "Upstream https://skipper-ui.com/v1/skipper93 returns HTTP 404"
+    ],
+    "auditNotes": "Skipped - Upstream 404 (does not exist in upstream registry)."
+  },
+  {
+    "id": "skipper94",
+    "specUrl": "https://skipper-ui.com/v1/skipper94",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper94",
+    "title": "Scroll progress 002",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper94.json",
+    "outputFile": "src/components/v1/skipper94.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper95",
+    "specUrl": "https://skipper-ui.com/v1/skipper95",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper95",
+    "title": "Scroll progress 003",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper95.json",
+    "outputFile": "src/components/v1/skipper95.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper96",
+    "specUrl": "https://skipper-ui.com/v1/skipper96",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper96",
+    "title": "Expandable tabs navigation",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper96.json",
+    "outputFile": "src/components/v1/skipper96.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper97",
+    "specUrl": "https://skipper-ui.com/v1/skipper97",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper97",
+    "title": "video player 003",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper97.json",
+    "outputFile": "src/components/v1/skipper97.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper98",
+    "specUrl": "https://skipper-ui.com/v1/skipper98",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper98",
+    "title": "Vertical tooltip menu",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper98.json",
+    "outputFile": "src/components/v1/skipper98.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Strongly typed context motion values (tooltipPosition, clipPathTop, clipPathBottom, opacity) with MotionValue<number>, springConfig with Transition, and replaced props casts with typed isValidElement checks."
+  },
+  {
+    "id": "skipper99",
+    "specUrl": "https://skipper-ui.com/v1/skipper99",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper99",
+    "title": "Animated icons 002",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper99.json",
+    "outputFile": "src/components/v1/skipper99.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper100",
+    "specUrl": "https://skipper-ui.com/v1/skipper100",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper100",
+    "title": "Draggable snap button",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper100.json",
+    "outputFile": "src/components/v1/skipper100.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper101",
+    "specUrl": "https://skipper-ui.com/v1/skipper101",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper101",
+    "title": "Custom tooltip",
+    "dependencies": [
+      "@radix-ui/react-tooltip"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper101.json",
+    "outputFile": "src/components/v1/skipper101.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper102",
+    "specUrl": "https://skipper-ui.com/v1/skipper102",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper102",
+    "title": "Debug Pannel",
+    "dependencies": [
+      "@radix-ui/react-tooltip"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper102.json",
+    "outputFile": "src/components/v1/skipper102.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Replaced [key: string]: any with [key: string]: unknown index signature and type-safe string/number rendering for motion spans."
+  },
+  {
+    "id": "skipper103",
+    "specUrl": "https://skipper-ui.com/v1/skipper103",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper103",
+    "title": "Bouncy accordion",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper103.json",
+    "outputFile": "src/components/v1/skipper103.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper104",
+    "specUrl": "https://skipper-ui.com/v1/skipper104",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper104",
+    "title": "Scroll reveal grid cards",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper104.json",
+    "outputFile": "src/components/v1/skipper104.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  },
+  {
+    "id": "skipper105",
+    "specUrl": "https://skipper-ui.com/v1/skipper105",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper105",
+    "title": "Auto Scale input",
+    "dependencies": [
+      "dialkit"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper105.json",
+    "outputFile": "src/components/v1/skipper105.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Typed watch dependencies as unknown[] and properly cast inputRef to React.MutableRefObject<HTMLInputElement | null>, eliminating all any casts."
+  },
+  {
+    "id": "skipper106",
+    "specUrl": "https://skipper-ui.com/v1/skipper106",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper106",
+    "title": "Smooth caret input",
+    "dependencies": [
+      "dialkit",
+      "framer-motion"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper106.json",
+    "outputFile": "src/components/v1/skipper106.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Added cancelAnimationFrame(rafId) in onSelection and effect cleanup to prevent running updateCaret after component unmount."
+  },
+  {
+    "id": "skipper107",
+    "specUrl": "https://skipper-ui.com/v1/skipper107",
+    "previewUrl": "https://skipper-ui.com/v1/preview/skipper107",
+    "title": "Knockout bracket",
+    "dependencies": [
+      "framer-motion",
+      "lucide-react"
+    ],
+    "evidenceBundlePath": "rea-evidence/skipper107.json",
+    "outputFile": "src/components/v1/skipper107.tsx",
+    "status": "verified",
+    "verification": "pass",
+    "openQuestions": [],
+    "auditNotes": "Verified clean across lifecycle cleanup, SSR safety, TypeScript strictness, and audio autoplay policy."
+  }
+]

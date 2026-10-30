@@ -1,0 +1,34 @@
+# Dependencies and build output
+node_modules/
+.next/
+out/
+dist/
+build/
+.npm/
+.pnpm-store/
+.turbo/
+*.tsbuildinfo
+
+# Environment files (keep the documented, non-secret template)
+.env*
+!.env.example
+
+# Local tooling and extraction artifacts
+.rea-cache/
+rea/
+rea-evidence/
+.claude/
+.oss-scanner/
+dataset/
+example/
+eng.traineddata
+
+# System, editor, tests and logs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+coverage/
+playwright-report/
+test-results/
+*.log

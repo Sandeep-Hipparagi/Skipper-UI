@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  ::before,
+  ::after {
+    border-color: var(--border);
+  }
+
+  :root {
+    --sf-pro-display: "SF Pro Display", sans-serif;
+    --satoshi: "Satoshi", sans-serif;
+    --background: #faf8f5;
+    --foreground: #1c1917;
+    --border: rgba(0, 0, 0, 0.08);
+    --muted: #f2eee8;
+    --muted2: #f7f4ee;
+    --muted3: #ece6dc;
+    --muted4: #fff;
+    --common: #1c1917;
+    --muted-foreground: #6b645c;
+    --code1: #00000080;
+    --code2: #6c6c6c80;
+    --code3: #00bfff;
+    --code4: #00000080;
+    --code5: #4dc398;
+    --code6: #00bfff;
+    --invert: invert(1);
+    --var-opacity: 0;
+    --accent: #f2eee8;
+    --card: #ffffff;
+    --card-foreground: #1c1917;
+    --popover: #ffffff;
+    --popover-foreground: #1c1917;
+    --primary: oklch(0.65 0.25 260);
+    --primary-foreground: oklch(0.98 0.02 260);
+    --secondary: oklch(0.7 0.2 180);
+    --secondary-foreground: oklch(0.98 0.02 180);
+    --tertiary: oklch(0.68 0.22 40);
+    --tertiary-foreground: oklch(0.98 0.02 40);
+    --input: #e6e0d4;
+    --ring: #1c1917;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: #090908;
+    --foreground: #f2eee8;
+    --border: rgba(242, 234, 218, 0.07);
+    --muted: #141413;
+    --muted2: #181817;
+    --muted3: #20201e;
+    --muted4: #20201e;
+    --muted-foreground: #8a8278;
+    --common: #a8a29e;
+    --primary: var(--code3);
+    --code1: #ffffff80;
+    --code2: #ffffff37;
+    --code3: #0cdcf7;
+    --code4: #fff;
+    --code5: #43ffba;
+    --code6: #fd971f;
+    --accent: oklch(0.65 0.2 145);
+    --invert: invert(0);
+    --var-opacity: 1;
+    --primary-foreground: oklch(0.15 0.02 260);
+    --secondary: oklch(0.75 0.2 180);
+    --secondary-foreground: oklch(0.15 0.02 180);
+    --tertiary: oklch(0.73 0.22 40);
+    --tertiary-foreground: oklch(0.15 0.02 40);
+    --card: #121211;
+    --card-foreground: #f2eee8;
+    --popover: #121211;
+    --popover-foreground: #f2eee8;
+    --destructive: oklch(0.704 0.191 22.216);
+    --input: rgba(242, 234, 218, 0.14);
+    --ring: rgba(242, 234, 218, 0.25);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+::selection {
+  background: rgba(242, 234, 218, 0.25);
+  color: var(--foreground);
+}
+
+:focus-visible {
+  outline: 2px solid var(--border);
+  outline-offset: 2px;
+}
+
+.bg-dot-grid {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.dark .bg-dot-grid {
+  background-image: radial-gradient(rgba(242, 234, 218, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Custom scrollbars and motion utilities from Skipper UI */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted-foreground);
+}
