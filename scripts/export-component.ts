@@ -4,7 +4,8 @@ const path = require("node:path");
 async function main() {
 const projectRoot = process.cwd();
 const args = process.argv.slice(2);
-const id = args[0];
+const requestedId = args[0];
+const id = requestedId?.replace(/^skiper(?=\d+$)/, "skipper");
 const destinationFlag = args.indexOf("--dest");
 let destination = destinationFlag >= 0 ? args[destinationFlag + 1] : undefined;
 if (!destination && process.env.npm_config_dest && process.env.npm_config_dest !== "true") {
@@ -108,7 +109,7 @@ for (const asset of assets) {
 const installList = [...npmPackages]
   .sort()
   .map((name) => `${name}@${availablePackages[name]}`);
-console.log(`Exported ${id} and ${sourceFiles.size - 1} local helper(s) to ${appRoot}`);
+console.log(`Exported ${id} (requested as ${requestedId}) and ${sourceFiles.size - 1} local helper(s) to ${appRoot}`);
 console.log(`Copied ${assets.size} referenced local asset path(s).`);
 console.log(installList.length ? `Install dependencies: npm install ${installList.join(" ")}` : "No external npm packages required.");
 }

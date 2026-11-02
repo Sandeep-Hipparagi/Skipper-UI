@@ -1,4 +1,6 @@
-# Skipper UI
+# Skipper UI for Free
+
+<p align="center"><img src="public/dot-logo.svg" alt="SKIPPER UI FOR FREE" width="520" /></p>
 
 [![Next.js 15](https://img.shields.io/badge/Next.js-15.5-black?logo=next.js)](https://nextjs.org/)
 [![React 19](https://img.shields.io/badge/React-19.3-149eca?logo=react)](https://react.dev/)
@@ -9,6 +11,8 @@
 [![Three.js](https://img.shields.io/badge/Three.js-0.186-black?logo=threedotjs)](https://threejs.org/)
 [![Components](https://img.shields.io/badge/Components-106%20Verified%20%2B%201%20Local-7c3aed)](#component-inventory)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+**Live gallery:** [skipper-ui.vercel.app](https://skipper-ui.vercel.app)
 
 An interactive showcase and production-grade component library reconstructing the complete **Skipper UI** catalog. Built with Next.js 15, React 19, Tailwind CSS, Framer Motion, GSAP, and Three.js, this repository provides 106 clean-room reconstructed motion components plus an original locally authored interactive design primitive (`skipper93`), all verified with zero runtime regressions.
 
@@ -54,6 +58,16 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 - Filter by design collections (Navbars, Loaders, Carousels, 3D, Cards, Buttons, Inputs).
 - Click any card to launch the **Interactive Drawer** featuring responsive viewport toggles (`375px`, `768px`, `100%`), spec metadata, and direct links to isolated preview routes.
 
+### Add a component to another project with shadcn
+
+Each of the 106 upstream-derived components has a static registry item hosted by this deployment. Run the generated command from the dashboard drawer or use:
+
+```bash
+npx shadcn@latest add https://skipper-ui.vercel.app/r/skiper24.json
+```
+
+Browse the [registry index](https://skipper-ui.vercel.app/r/index.json). Registry items use media hosted on the same Vercel origin, and the index lists their media URLs. `skipper93` is an original local primitive because the upstream URL returns 404; it remains available in the local catalog and exporter, but is not counted among the 106 upstream registry items.
+
 ---
 
 ## Component Portability & Future Project Extraction
@@ -71,6 +85,8 @@ We provide an automated extraction utility to copy any component, its dependenci
 # Export skipper24 to an external application directory
 npm run export:component skipper24 --dest ../my-new-app
 ```
+
+The exporter also accepts the one-p alias: `npm run export:component -- skiper93 --dest ../my-new-app`.
 
 The script will:
 1. Analyze `src/components/v1/skipper24.tsx` for local imports and npm packages.
@@ -210,66 +226,46 @@ To manually pull a component:
 
 ```
 Skipper-UI/
-├── src/
-│   ├── app/                    # Next.js 15 App Router
-│   │   ├── page.tsx            # Main catalog gallery & interactive drawer
-│   │   ├── v1/[slug]/          # Component specification & inspection view
-│   │   └── v1/preview/[slug]/  # Isolated full-screen component preview
-│   ├── components/v1/          # 107 self-contained component implementations
-│   └── lib/
-│       ├── registry.ts         # Typed component registry and dynamic import loaders
-│       ├── side-by-side-data.json # Catalog metadata (titles, categories, preview URLs)
-│       └── utils.ts            # Class merging utility (clsx + tailwind-merge)
-├── public/                     # 100% locally hosted static assets
-│   ├── skipperv1/              # Per-component images and textures
-│   ├── thumbnails/             # 107 pre-rendered WebP preview snapshots
-│   ├── audio/                  # UI sound clips
-│   ├── videos/                 # Video backgrounds
-│   └── models/                 # 3D assets (.glb, .hdr)
-├── scripts/
-│   ├── export-component.ts     # CLI extraction tool for external codebases
-│   ├── verify-assets.mjs       # Static asset verification scanner
-│   └── audit-skippers.mjs      # Playwright headless smoke audit engine
-└── rea-skipper-manifest.json   # Deterministic telemetry, audit notes & verification records
+â”œâ”€â”€ src/
+â”‚   â”œâ”€â”€ app/                    # Next.js 15 App Router
+â”‚   â”‚   â”œâ”€â”€ page.tsx            # Main catalog gallery & interactive drawer
+â”‚   â”‚   â”œâ”€â”€ v1/[slug]/          # Component specification & inspection view
+â”‚   â”‚   â””â”€â”€ v1/preview/[slug]/  # Isolated full-screen component preview
+â”‚   â”œâ”€â”€ components/v1/          # 107 self-contained component implementations
+â”‚   â””â”€â”€ lib/
+â”‚       â”œâ”€â”€ registry.ts         # Typed component registry and dynamic import loaders
+â”‚       â”œâ”€â”€ side-by-side-data.json # Catalog metadata (titles, categories, preview URLs)
+â”‚       â””â”€â”€ utils.ts            # Class merging utility (clsx + tailwind-merge)
+â”œâ”€â”€ public/                     # 100% locally hosted static assets
+â”‚   â”œâ”€â”€ skipperv1/              # Per-component images and textures
+â”‚   â”œâ”€â”€ thumbnails/             # 107 pre-rendered WebP preview snapshots
+â”‚   â”œâ”€â”€ audio/                  # UI sound clips
+â”‚   â”œâ”€â”€ videos/                 # Video backgrounds
+â”‚   â””â”€â”€ models/                 # 3D assets (.glb, .hdr)
+â”œâ”€â”€ scripts/
+â”‚   â”œâ”€â”€ export-component.ts     # CLI extraction tool for external codebases
+â”‚   â”œâ”€â”€ verify-assets.mjs       # Static asset verification scanner
+â”‚   â””â”€â”€ audit-skippers.mjs      # Playwright headless smoke audit engine
+â””â”€â”€ rea-skipper-manifest.json   # Deterministic telemetry, audit notes & verification records
 ```
 
 ### Verification Pipeline
 
 1. **Manifest Parity & Coverage:**
-   - `./rea-skipper-manifest.json` tracks all 107 components. Exactly **106** are verified clean reconstructions (`"status": "verified"`, `"verification": "pass"`), and **1** (`skipper93`) is recorded as `"status": "upstream_404"`, `"verification": "not_applicable"` with a locally authored interactive primitive provided to complete the sequence.
+   - `./rea-skipper-manifest.json` tracks all 107 local implementations. Exactly **106** are verified clean reconstructions (`"status": "verified"`, `"verification": "pass"`), and **1** (`skipper93`) retains upstream provenance (`"status": "upstream_404"`, `"verification": "not_applicable"`) while recording `"localImplementation": "present"` for its original primitive.
 2. **Deterministic Quality Gate:**
    - **Type Checking:** `npm run typecheck` (`tsc --noEmit`) validates complete TypeScript strictness.
    - **Asset Integrity:** `npm run verify:assets` verifies all 182+ local asset paths exist with non-zero byte size.
    - **Production Build:** Next.js 15 builds all static and dynamic routes cleanly with zero SSR mismatches.
-   - **Browser Smoke Audit:** `npm run smoke` navigates Chromium headlessly across all 107 routes, asserting HTTP 200, DOM mount visibility, zero unhandled promise rejections, zero audio autoplay errors, and zero console exceptions.
+   - **Browser Smoke Audit:** `npm run smoke` navigates Chromium across all 107 routes; `npm run test:e2e` checks dashboard interactions, representative previews and registry endpoints.
+   - **Unit/Contract Tests:** `npm run test:unit` checks manifest/registry parity, media integrity, SVG identifier collisions and standalone export.
+   - **Local E2E Setup:** Build with `npm run build`, start `npm run start` in one terminal, then run `npx playwright test tests/e2e/smoke.spec.ts` in another. Set `PLAYWRIGHT_TEST_BASE_URL` to verify a remote deployment instead.
 
 ---
 
 ## Continuous Integration & Deployment (GitHub Actions)
 
-This repository includes a production-ready GitHub Actions workflow (`.github/workflows/ci-cd.yml`):
-
-### 1. Verification Job (`verify`)
-Runs on every pull request and push to `main`:
-1. Checks out repository code via `actions/checkout@v4`.
-2. Sets up Node.js 22 with npm dependency caching.
-3. Installs dependencies using `npm ci`.
-4. Runs `npm audit --audit-level=high` to ensure zero critical or high vulnerabilities.
-5. Executes automated unit tests (`npm test`).
-6. Executes strict TypeScript verification (`npm run typecheck`).
-7. Validates local static media presence (`npm run verify:assets`).
-8. Compiles Next.js production build (`npm run build`).
-9. Installs Playwright Chromium browser binaries and system dependencies (`npx playwright install chromium --with-deps`).
-10. Spawns the Next.js production server and runs the end-to-end headless browser smoke audit (`npm run smoke`) across all 107 component preview routes.
-
-### 2. Deployment Job (`deploy`)
-Automatically triggers when verification passes:
-- **Pull Requests:** Generates a Vercel Preview Deployment for visual regression review.
-- **Push to `main`:** Deploys directly to Vercel Production.
-
-To enable Vercel automated deployments:
-1. Set GitHub Actions Variable `VERCEL_ENABLED=true` in Repository Settings.
-2. Add GitHub Actions Secrets: `VERCEL_TOKEN`, `VERCEL_ORG_ID`, and `VERCEL_PROJECT_ID`.
+`.github/workflows/ci.yml` checks generated registry parity, TypeScript, contract tests, a production build and browser smoke tests on pushes and pull requests to `main`. `.github/workflows/vercel-deployment-check.yml` runs the same browser suite against each successful Vercel deployment URL. Vercel's Git integration performs deployments; Actions verify those deployments.
 
 ---
 
@@ -285,5 +281,5 @@ To enable Vercel automated deployments:
 
 ## License
 
-MIT License © 2026 Sandeep Hipparagi. See [LICENSE](LICENSE) for full details.
+MIT License Â© 2026 Sandeep Hipparagi. See [LICENSE](LICENSE) for full details.
 Third-party libraries and asset files belong to their respective authors.

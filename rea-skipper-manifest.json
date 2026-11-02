@@ -1416,7 +1416,11 @@
     "openQuestions": [
       "Upstream https://skipper-ui.com/v1/skipper93 returns HTTP 404"
     ],
-    "auditNotes": "Skipped - Upstream 404 (does not exist in upstream registry)."
+    "auditNotes": "Original local interactive design primitive fills the catalog slot; upstream reference returned HTTP 404. Local preview and export are available.",
+    "upstreamAvailability": "upstream_404",
+    "localImplementation": "present",
+    "implementationKind": "original_local_primitive",
+    "localVerification": "pass"
   },
   {
     "id": "skipper94",

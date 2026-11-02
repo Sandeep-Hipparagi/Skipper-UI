@@ -14,6 +14,7 @@
   },
   "scripts": {
     "dev": "next dev",
+    "prebuild": "npm run build:registry",
     "build": "next build",
     "start": "next start",
     "test": "node --test tests/catalog.test.mjs",
@@ -25,7 +26,10 @@
     "harvest": "tsx harvest-skipper.ts",
     "harvest:sample": "tsx harvest-skipper.ts --only 1,40",
     "harvest:full": "tsx harvest-skipper.ts --start 1 --end 107 --concurrency 3",
-    "audit:thumbnails": "npx tsx scripts/capture-thumbnails.ts"
+    "audit:thumbnails": "npx tsx scripts/capture-thumbnails.ts",
+    "build:registry": "node --experimental-strip-types scripts/build-registry-json.ts",
+    "test:e2e": "playwright test tests/e2e/smoke.spec.ts",
+    "test:unit": "node --test tests/unit/*.test.mjs"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",

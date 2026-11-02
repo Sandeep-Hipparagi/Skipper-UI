@@ -1,0 +1,24 @@
+name: Component enhancement
+description: Suggest a component variant, interaction, or prop extension.
+title: "[Enhancement]: "
+labels: [enhancement]
+body:
+  - type: input
+    id: component
+    attributes:
+      label: Component ID or new component
+      placeholder: skipper24 or new component idea
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe the variant, props, and interaction details.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Use case or reference
+      description: Add context, screenshots, or links where useful.

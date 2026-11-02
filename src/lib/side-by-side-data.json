@@ -4128,8 +4128,8 @@
     "tier": "free",
     "localSpecUrl": "/v1/skipper93",
     "localPreviewUrl": "/v1/preview/skipper93",
-    "status": "verified",
-    "statusLabel": "Original ? Ready to Explore",
+    "status": "local",
+    "statusLabel": "Original Local Primitive",
     "identical": [
       "Original Skipper UI primitive designed for the reserved sequence slot."
     ],

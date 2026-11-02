@@ -23,7 +23,8 @@ import {
   Laptop,
   Maximize2,
   Dice5,
-  ArrowRight
+  ArrowRight,
+  Copy,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
@@ -116,6 +117,7 @@ export default function RegistryDashboard() {
   const [modalViewport, setModalViewport] = useState<"full" | "desktop" | "tablet" | "mobile">("full");
   const [modalMountKey, setModalMountKey] = useState(0);
   const [featuredDemo, setFeaturedDemo] = useState<"equalizer" | "switch" | "icons">("equalizer");
+  const [copyCommandLabel, setCopyCommandLabel] = useState("Copy CLI Command");
 
   const searchInputRef = useRef<HTMLInputElement>(null);
   const components = sideBySideList as ComponentRecord[];
@@ -227,15 +229,13 @@ export default function RegistryDashboard() {
       <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3.5">
           <div className="flex items-center gap-3">
-            <div className="flex size-9 items-center justify-center rounded-xl bg-foreground text-background font-mono font-bold text-base shadow-sm">
-              S
-            </div>
+            <img src="/dot-logo.svg" alt="SKIPPER UI FOR FREE" width="152" height="36" className="h-9 w-[152px] object-contain object-left" />
             <div>
               <h1 className="text-base font-bold tracking-tight text-foreground leading-tight">
                 Skipper UI
               </h1>
               <p className="text-[11px] text-muted-foreground">
-                107 Implemented Primitives · 107 Catalog Slots
+                106 Verified + 1 Original · 107 Catalog Slots
               </p>
             </div>
           </div>
@@ -244,7 +244,7 @@ export default function RegistryDashboard() {
           <div className="flex items-center gap-2.5 ml-auto">
             <span className="hidden sm:inline-flex items-center gap-1.5 rounded-full border border-border bg-muted/40 px-3 py-1 text-xs font-medium text-muted-foreground">
               <span className="size-1.5 rounded-full bg-emerald-500 animate-pulse" />
-              107 Live · 0 Reserved
+              107 Live · 106 Verified · 1 Original
             </span>
 
             {/* Theme Toggle from skipper4 */}
@@ -265,7 +265,7 @@ export default function RegistryDashboard() {
         <div className="lg:col-span-7 space-y-6 text-left">
           <div className="inline-flex items-center gap-2 rounded-lg border bg-muted/30 px-3 py-1 text-xs font-semibold text-muted-foreground">
             <span className="size-2 rounded-full bg-emerald-500" />
-            <span className="uppercase tracking-widest text-[10px]">Production Suite by Sandeep · All 107 Slots Are Live</span>
+            <span className="uppercase tracking-widest text-[10px]">Production Suite by Sandeep · 106 Reconstructed + 1 Original Primitive</span>
           </div>
 
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-[1.08]">
@@ -273,7 +273,7 @@ export default function RegistryDashboard() {
           </h2>
 
           <p className="text-base sm:text-lg text-muted-foreground max-w-xl leading-relaxed">
-            Explore 107 production-ready motion primitives, built with React 19, Next.js 15, and Framer Motion. Self-contained fluid physics, with every primitive free to use.
+            Explore 106 reconstructed motion primitives and one original interactive design primitive, built with React 19, Next.js 15, and Framer Motion. Every primitive is free to use.
           </p>
 
           {/* Structured Action CTAs (non-slop padding & hover states) */}
@@ -827,6 +827,26 @@ export default function RegistryDashboard() {
 
                 {/* Center / Right: Viewport Sizing Controls & Actions */}
                 <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    data-testid="copy-cli-command"
+                    onClick={async () => {
+                      if (!activeModalSlug) return;
+                      const number = activeModalSlug.replace(/^skipper/, "");
+                      const command = `npx shadcn@latest add https://${window.location.host}/r/skiper${number}.json`;
+                      try {
+                        await navigator.clipboard.writeText(command);
+                        setCopyCommandLabel("Copied!");
+                        window.setTimeout(() => setCopyCommandLabel("Copy CLI Command"), 1800);
+                      } catch {
+                        setCopyCommandLabel("Clipboard unavailable");
+                        window.setTimeout(() => setCopyCommandLabel("Copy CLI Command"), 1800);
+                      }
+                    }}
+                    className="flex items-center gap-1.5 rounded-lg border bg-background px-2.5 py-1 text-xs font-medium hover:bg-muted"
+                  >
+                    <Copy className="size-3.5" />{copyCommandLabel}
+                  </button>
                   {/* Viewport switchers in modal */}
                   <div className="hidden sm:flex items-center rounded-lg border bg-background/60 p-0.5">
                     <button

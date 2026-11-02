@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 180" role="img" aria-labelledby="title desc">
+  <title id="title">SKIPPER UI FOR FREE</title>
+  <desc id="desc">Dot matrix lettering for Skipper UI for Free</desc>
+  <defs>
+    <pattern id="dots" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="2.35" fill="#f4efe6"/>
+    </pattern>
+    <mask id="letter-mask"><rect width="760" height="180" fill="#000"/><text x="15" y="91" font-family="Arial,sans-serif" font-size="78" font-weight="900" letter-spacing="3" fill="#fff">SKIPPER UI</text><text x="17" y="151" font-family="Arial,sans-serif" font-size="42" font-weight="800" letter-spacing="9" fill="#fff">FOR FREE</text></mask>
+  </defs>
+  <rect width="760" height="180" fill="url(#dots)" mask="url(#letter-mask)"/>
+</svg>
+

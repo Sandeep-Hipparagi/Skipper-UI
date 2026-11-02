@@ -1,0 +1,33 @@
+name: Component bug report
+description: Report a reproducible issue in the dashboard or a Skipper component.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: input
+    id: component
+    attributes:
+      label: Component ID
+      description: Enter Dashboard or a catalog component ID from skipper1 through skipper107.
+      placeholder: skipper42
+    validations:
+      required: true
+  - type: input
+    id: browser-os
+    attributes:
+      label: Browser and OS
+      placeholder: Chrome 140 on Windows 11
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      placeholder: "1. Open ...\n2. Click ...\n3. Observe ..."
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console or WebGL errors
+      render: text
+      description: Remove secrets and personal data before posting logs.

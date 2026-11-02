@@ -218,10 +218,19 @@ export const CopyIcon: React.FC<{ className?: string; copyText?: string }> = ({
   copyText = "copied Hello from skipper ui",
 }) => {
   const [copied, setCopied] = useState(false);
+  const copiedTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
+  useEffect(() => () => {
+    if (copiedTimeout.current) clearTimeout(copiedTimeout.current);
+  }, []);
   const handleCopy = async () => {
-    await navigator.clipboard.writeText(copyText);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 1000);
+    try {
+      await navigator.clipboard.writeText(copyText);
+      setCopied(true);
+      if (copiedTimeout.current) clearTimeout(copiedTimeout.current);
+      copiedTimeout.current = setTimeout(() => setCopied(false), 1000);
+    } catch {
+      setCopied(false);
+    }
   };
 
   return (

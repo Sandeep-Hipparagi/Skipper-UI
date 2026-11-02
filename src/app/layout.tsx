@@ -2,10 +2,18 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Skipper UI Component Registry",
-  description: "Reconstructed Skipper UI components registry created by Sandeep",
-  authors: [{ name: "Sandeep" }],
-  creator: "Sandeep",
+  metadataBase: new URL("https://skipper-ui.vercel.app"),
+  title: "Skipper UI for Free — Interactive Component Registry",
+  description: "Explore 106 reconstructed Skipper UI components and an original interactive primitive, built for React and Next.js.",
+  authors: [{ name: "Sandeep Hipparagi" }],
+  creator: "Sandeep Hipparagi",
+  icons: { icon: "/dot-logo.svg", apple: "/dot-logo.svg" },
+  openGraph: {
+    title: "Skipper UI for Free",
+    description: "A portable catalog of interactive React components.",
+    images: [{ url: "/dot-logo.svg", alt: "Skipper UI for Free" }],
+    type: "website",
+  },
 };
 
 export default function RootLayout({
