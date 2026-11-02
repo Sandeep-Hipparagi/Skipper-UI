@@ -67,7 +67,7 @@
     "three": "^0.186.1"
   },
   "devDependencies": {
-    "@types/node": "^22.10.2",
+    "@types/node": "^26.6.6",
     "tesseract.js": "^7.0.0",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2"
