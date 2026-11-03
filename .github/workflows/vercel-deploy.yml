@@ -1,0 +1,108 @@
+name: Vercel Deployment Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: "Target deployment environment"
+        required: true
+        default: "preview"
+        type: choice
+        options:
+          - preview
+          - production
+      run_smoke_tests:
+        description: "Run Playwright E2E smoke suite against deployed URL"
+        required: true
+        default: true
+        type: boolean
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/**'
+      - 'public/**'
+      - 'package.json'
+      - 'next.config.mjs'
+      - 'tailwind.config.ts'
+      - 'vercel.json'
+
+concurrency:
+  group: vercel-deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  deployments: write
+  pull-requests: write
+
+jobs:
+  deploy:
+    name: Deploy & Validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - uses: actions/setup-node@0a44ba7841725637a19e28fa30b79a866c81b0a6 # v4.0.4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install locked dependencies
+        run: npm ci --legacy-peer-deps
+
+      - name: Build shadcn registry artifacts
+        run: npm run build:registry
+
+      - name: Typecheck validation
+        run: npx tsc --noEmit
+
+      - name: Determine Deployment Target
+        id: target
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            ENV_CHOICE="${{ github.event.inputs.environment }}"
+          elif [ "${{ github.ref }}" = "refs/heads/main" ]; then
+            ENV_CHOICE="production"
+          else
+            ENV_CHOICE="preview"
+          fi
+
+          if [ "$ENV_CHOICE" = "production" ]; then
+            echo "is_production=true" >> "$GITHUB_OUTPUT"
+            echo "deploy_flag=--prod" >> "$GITHUB_OUTPUT"
+            echo "target_desc=Production (https://skipper-ui.vercel.app)" >> "$GITHUB_OUTPUT"
+          else
+            echo "is_production=false" >> "$GITHUB_OUTPUT"
+            echo "deploy_flag=" >> "$GITHUB_OUTPUT"
+            echo "target_desc=Preview Environment" >> "$GITHUB_OUTPUT"
+          fi
+          echo "env_name=$ENV_CHOICE" >> "$GITHUB_OUTPUT"
+
+      - name: Deploy with Vercel CLI (Token Authentication)
+        id: vercel
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: |
+          if [ -n "$VERCEL_TOKEN" ]; then
+            echo "Deploying to ${{ steps.target.outputs.target_desc }}..."
+            DEPLOYED_URL=$(npx vercel deploy ${{ steps.target.outputs.deploy_flag }} --token="$VERCEL_TOKEN" --yes)
+            echo "url=$DEPLOYED_URL" >> "$GITHUB_OUTPUT"
+            echo "Vercel deployment finished: $DEPLOYED_URL"
+          else
+            echo "VERCEL_TOKEN not provided in GitHub Secrets."
+            echo "Automatic deployments are orchestrated by Vercel GitHub App."
+            echo "url=https://skipper-ui.vercel.app" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Playwright E2E Verification
+        if: ${{ github.event.inputs.run_smoke_tests != 'false' }}
+        run: |
+          TARGET_URL="${{ steps.vercel.outputs.url }}"
+          echo "Running Playwright E2E smoke test against: $TARGET_URL"
+          npx playwright install --with-deps chromium
+          npx playwright test tests/e2e/smoke.spec.ts
+        env:
+          PLAYWRIGHT_TEST_BASE_URL: ${{ steps.vercel.outputs.url }}

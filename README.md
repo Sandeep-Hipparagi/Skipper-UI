@@ -134,117 +134,117 @@ To manually copy a component:
 
 ## Component Inventory
 
-The catalog contains **107 interactive primitives**. Every entry below links directly to its **Live Demo** on the Vercel deployment, its **Specification Details** page, and the original **Upstream Reference**:
+The catalog contains **107 interactive primitives**. Every entry below links directly to its **Live Demo** on the Vercel deployment and its **Specification Details** page:
 
-| Component ID | Component Title | Primary Tech Stack | Vercel Deployment | Upstream Reference |
-|:---|:---|:---|:---|:---|
-| `skipper1` | Anime js scrollbar | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper1) · [Inspect](https://skipper-ui.vercel.app/v1/skipper1) | [Upstream Ref](https://skipper-ui.com/v1/skipper1) |
-| `skipper2` | Dynamic island | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper2) · [Inspect](https://skipper-ui.vercel.app/v1/skipper2) | [Upstream Ref](https://skipper-ui.com/v1/skipper2) |
-| `skipper3` | Apple play button | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper3) · [Inspect](https://skipper-ui.vercel.app/v1/skipper3) | [Upstream Ref](https://skipper-ui.com/v1/skipper3) |
-| `skipper4` | Theme toggle buttons | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper4) · [Inspect](https://skipper-ui.vercel.app/v1/skipper4) | [Upstream Ref](https://skipper-ui.com/v1/skipper4) |
-| `skipper5` | Things drag and scroll | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper5) · [Inspect](https://skipper-ui.vercel.app/v1/skipper5) | [Upstream Ref](https://skipper-ui.com/v1/skipper5) |
-| `skipper6` | Hover members | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper6) · [Inspect](https://skipper-ui.vercel.app/v1/skipper6) | [Upstream Ref](https://skipper-ui.com/v1/skipper6) |
-| `skipper7` | Nike preloader | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper7) · [Inspect](https://skipper-ui.vercel.app/v1/skipper7) | [Upstream Ref](https://skipper-ui.com/v1/skipper7) |
-| `skipper8` | Words preloader | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper8) · [Inspect](https://skipper-ui.vercel.app/v1/skipper8) | [Upstream Ref](https://skipper-ui.com/v1/skipper8) |
-| `skipper9` | Stairs preloader | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper9) · [Inspect](https://skipper-ui.vercel.app/v1/skipper9) | [Upstream Ref](https://skipper-ui.com/v1/skipper9) |
-| `skipper10` | Double stairs preloader | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper10) · [Inspect](https://skipper-ui.vercel.app/v1/skipper10) | [Upstream Ref](https://skipper-ui.com/v1/skipper10) |
-| `skipper11` | Pixel preloader | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper11) · [Inspect](https://skipper-ui.vercel.app/v1/skipper11) | [Upstream Ref](https://skipper-ui.com/v1/skipper11) |
-| `skipper12` | Vercel Liquid simulation | Three.js, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper12) · [Inspect](https://skipper-ui.vercel.app/v1/skipper12) | [Upstream Ref](https://skipper-ui.com/v1/skipper12) |
-| `skipper13` | Nike menu | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper13) · [Inspect](https://skipper-ui.vercel.app/v1/skipper13) | [Upstream Ref](https://skipper-ui.com/v1/skipper13) |
-| `skipper14` | Ascii Simulation | Three.js, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper14) · [Inspect](https://skipper-ui.vercel.app/v1/skipper14) | [Upstream Ref](https://skipper-ui.com/v1/skipper14) |
-| `skipper15` | Box loading preloader | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper15) · [Inspect](https://skipper-ui.vercel.app/v1/skipper15) | [Upstream Ref](https://skipper-ui.com/v1/skipper15) |
-| `skipper16` | Card stack scroll | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper16) · [Inspect](https://skipper-ui.vercel.app/v1/skipper16) | [Upstream Ref](https://skipper-ui.com/v1/skipper16) |
-| `skipper17` | Card stack with gsap and rotate | GSAP, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper17) · [Inspect](https://skipper-ui.vercel.app/v1/skipper17) | [Upstream Ref](https://skipper-ui.com/v1/skipper17) |
-| `skipper18` | Image cursor trail | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper18) · [Inspect](https://skipper-ui.vercel.app/v1/skipper18) | [Upstream Ref](https://skipper-ui.com/v1/skipper18) |
-| `skipper19` | Svg follow scroll | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper19) · [Inspect](https://skipper-ui.vercel.app/v1/skipper19) | [Upstream Ref](https://skipper-ui.com/v1/skipper19) |
-| `skipper20` | UniSwap Country Dialog | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper20) · [Inspect](https://skipper-ui.vercel.app/v1/skipper20) | [Upstream Ref](https://skipper-ui.com/v1/skipper20) |
-| `skipper21` | Family wallet | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper21) · [Inspect](https://skipper-ui.vercel.app/v1/skipper21) | [Upstream Ref](https://skipper-ui.com/v1/skipper21) |
-| `skipper22` | Aave token swap | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper22) · [Inspect](https://skipper-ui.vercel.app/v1/skipper22) | [Upstream Ref](https://skipper-ui.com/v1/skipper22) |
-| `skipper23` | Minimal Card Expand | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper23) · [Inspect](https://skipper-ui.vercel.app/v1/skipper23) | [Upstream Ref](https://skipper-ui.com/v1/skipper23) |
-| `skipper24` | Tik tik color list | GSAP, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper24) · [Inspect](https://skipper-ui.vercel.app/v1/skipper24) | [Upstream Ref](https://skipper-ui.com/v1/skipper24) |
-| `skipper25` | Music toggle btn | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper25) · [Inspect](https://skipper-ui.vercel.app/v1/skipper25) | [Upstream Ref](https://skipper-ui.com/v1/skipper25) |
-| `skipper26` | Theme toggle btn | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper26) · [Inspect](https://skipper-ui.vercel.app/v1/skipper26) | [Upstream Ref](https://skipper-ui.com/v1/skipper26) |
-| `skipper27` | Rolling text | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper27) · [Inspect](https://skipper-ui.vercel.app/v1/skipper27) | [Upstream Ref](https://skipper-ui.com/v1/skipper27) |
-| `skipper28` | 3D perspective text | Three.js, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper28) · [Inspect](https://skipper-ui.vercel.app/v1/skipper28) | [Upstream Ref](https://skipper-ui.com/v1/skipper28) |
-| `skipper29` | Siena parallax | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper29) · [Inspect](https://skipper-ui.vercel.app/v1/skipper29) | [Upstream Ref](https://skipper-ui.com/v1/skipper29) |
-| `skipper30` | Oliver parallax | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper30) · [Inspect](https://skipper-ui.vercel.app/v1/skipper30) | [Upstream Ref](https://skipper-ui.com/v1/skipper30) |
-| `skipper31` | Text Scroll animation | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper31) · [Inspect](https://skipper-ui.vercel.app/v1/skipper31) | [Upstream Ref](https://skipper-ui.com/v1/skipper31) |
-| `skipper32` | Scroll images reveal 001 | GSAP, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper32) · [Inspect](https://skipper-ui.vercel.app/v1/skipper32) | [Upstream Ref](https://skipper-ui.com/v1/skipper32) |
-| `skipper33` | Scroll images reveal 002 | GSAP, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper33) · [Inspect](https://skipper-ui.vercel.app/v1/skipper33) | [Upstream Ref](https://skipper-ui.com/v1/skipper33) |
-| `skipper34` | Scroll images reveal 003 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper34) · [Inspect](https://skipper-ui.vercel.app/v1/skipper34) | [Upstream Ref](https://skipper-ui.com/v1/skipper34) |
-| `skipper35` | Hover expand | GSAP, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper35) · [Inspect](https://skipper-ui.vercel.app/v1/skipper35) | [Upstream Ref](https://skipper-ui.com/v1/skipper35) |
-| `skipper36` | Interactive3d Hero | Three.js, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper36) · [Inspect](https://skipper-ui.vercel.app/v1/skipper36) | [Upstream Ref](https://skipper-ui.com/v1/skipper36) |
-| `skipper37` | Animated number | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper37) · [Inspect](https://skipper-ui.vercel.app/v1/skipper37) | [Upstream Ref](https://skipper-ui.com/v1/skipper37) |
-| `skipper38` | Apple Navbar V001 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper38) · [Inspect](https://skipper-ui.vercel.app/v1/skipper38) | [Upstream Ref](https://skipper-ui.com/v1/skipper38) |
-| `skipper39` | Canvas crowd | GSAP, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper39) · [Inspect](https://skipper-ui.vercel.app/v1/skipper39) | [Upstream Ref](https://skipper-ui.com/v1/skipper39) |
-| `skipper40` | CssLink | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper40) · [Inspect](https://skipper-ui.vercel.app/v1/skipper40) | [Upstream Ref](https://skipper-ui.com/v1/skipper40) |
-| `skipper41` | Progressive Blur | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper41) · [Inspect](https://skipper-ui.vercel.app/v1/skipper41) | [Upstream Ref](https://skipper-ui.com/v1/skipper41) |
-| `skipper42` | Animated icons 001 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper42) · [Inspect](https://skipper-ui.vercel.app/v1/skipper42) | [Upstream Ref](https://skipper-ui.com/v1/skipper42) |
-| `skipper43` | Vercel Tooltip | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper43) · [Inspect](https://skipper-ui.vercel.app/v1/skipper43) | [Upstream Ref](https://skipper-ui.com/v1/skipper43) |
-| `skipper44` | Vercel scroll with blur | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper44) · [Inspect](https://skipper-ui.vercel.app/v1/skipper44) | [Upstream Ref](https://skipper-ui.com/v1/skipper44) |
-| `skipper45` | Family Receive button | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper45) · [Inspect](https://skipper-ui.vercel.app/v1/skipper45) | [Upstream Ref](https://skipper-ui.com/v1/skipper45) |
-| `skipper46` | Nextjs gooey menu | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper46) · [Inspect](https://skipper-ui.vercel.app/v1/skipper46) | [Upstream Ref](https://skipper-ui.com/v1/skipper46) |
-| `skipper47` | Perspective carousel | Swiper, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper47) · [Inspect](https://skipper-ui.vercel.app/v1/skipper47) | [Upstream Ref](https://skipper-ui.com/v1/skipper47) |
-| `skipper48` | Card swipe carousel | Swiper, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper48) · [Inspect](https://skipper-ui.vercel.app/v1/skipper48) | [Upstream Ref](https://skipper-ui.com/v1/skipper48) |
-| `skipper49` | Inverted perspective carousel | Swiper, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper49) · [Inspect](https://skipper-ui.vercel.app/v1/skipper49) | [Upstream Ref](https://skipper-ui.com/v1/skipper49) |
-| `skipper50` | Creative carousel 001 | Swiper, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper50) · [Inspect](https://skipper-ui.vercel.app/v1/skipper50) | [Upstream Ref](https://skipper-ui.com/v1/skipper50) |
-| `skipper51` | Creative carousel 002 | Swiper, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper51) · [Inspect](https://skipper-ui.vercel.app/v1/skipper51) | [Upstream Ref](https://skipper-ui.com/v1/skipper51) |
-| `skipper52` | ExpandOnHover | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper52) · [Inspect](https://skipper-ui.vercel.app/v1/skipper52) | [Upstream Ref](https://skipper-ui.com/v1/skipper52) |
-| `skipper53` | ExpandOnHover vertical | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper53) · [Inspect](https://skipper-ui.vercel.app/v1/skipper53) | [Upstream Ref](https://skipper-ui.com/v1/skipper53) |
-| `skipper54` | Shadcn clipPath Carousal | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper54) · [Inspect](https://skipper-ui.vercel.app/v1/skipper54) | [Upstream Ref](https://skipper-ui.com/v1/skipper54) |
-| `skipper55` | Parallax Image | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper55) · [Inspect](https://skipper-ui.vercel.app/v1/skipper55) | [Upstream Ref](https://skipper-ui.com/v1/skipper55) |
-| `skipper56` | Devouring details sign in | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper56) · [Inspect](https://skipper-ui.vercel.app/v1/skipper56) | [Upstream Ref](https://skipper-ui.com/v1/skipper56) |
-| `skipper57` | Vercel navigation bar | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper57) · [Inspect](https://skipper-ui.vercel.app/v1/skipper57) | [Upstream Ref](https://skipper-ui.com/v1/skipper57) |
-| `skipper58` | Text roll navigation | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper58) · [Inspect](https://skipper-ui.vercel.app/v1/skipper58) | [Upstream Ref](https://skipper-ui.com/v1/skipper58) |
-| `skipper59` | Drawing cursor effect | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper59) · [Inspect](https://skipper-ui.vercel.app/v1/skipper59) | [Upstream Ref](https://skipper-ui.com/v1/skipper59) |
-| `skipper60` | Side Scroll Navigation | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper60) · [Inspect](https://skipper-ui.vercel.app/v1/skipper60) | [Upstream Ref](https://skipper-ui.com/v1/skipper60) |
-| `skipper61` | Mouse follow animations | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper61) · [Inspect](https://skipper-ui.vercel.app/v1/skipper61) | [Upstream Ref](https://skipper-ui.com/v1/skipper61) |
-| `skipper62` | Loop animation hook | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper62) · [Inspect](https://skipper-ui.vercel.app/v1/skipper62) | [Upstream Ref](https://skipper-ui.com/v1/skipper62) |
-| `skipper63` | Apple squicircle effect | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper63) · [Inspect](https://skipper-ui.vercel.app/v1/skipper63) | [Upstream Ref](https://skipper-ui.com/v1/skipper63) |
-| `skipper64` | Gooey Effect | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper64) · [Inspect](https://skipper-ui.vercel.app/v1/skipper64) | [Upstream Ref](https://skipper-ui.com/v1/skipper64) |
-| `skipper65` | Breakpoint indicator | React / CSS | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper65) · [Inspect](https://skipper-ui.vercel.app/v1/skipper65) | [Upstream Ref](https://skipper-ui.com/v1/skipper65) |
-| `skipper66` | SVG clip path mask | React / CSS | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper66) · [Inspect](https://skipper-ui.vercel.app/v1/skipper66) | [Upstream Ref](https://skipper-ui.com/v1/skipper66) |
-| `skipper67` | Video player 001 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper67) · [Inspect](https://skipper-ui.vercel.app/v1/skipper67) | [Upstream Ref](https://skipper-ui.com/v1/skipper67) |
-| `skipper68` | Animated number input | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper68) · [Inspect](https://skipper-ui.vercel.app/v1/skipper68) | [Upstream Ref](https://skipper-ui.com/v1/skipper68) |
-| `skipper69` | Skipper Number flow | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper69) · [Inspect](https://skipper-ui.vercel.app/v1/skipper69) | [Upstream Ref](https://skipper-ui.com/v1/skipper69) |
-| `skipper70` | Text reveal box | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper70) · [Inspect](https://skipper-ui.vercel.app/v1/skipper70) | [Upstream Ref](https://skipper-ui.com/v1/skipper70) |
-| `skipper71` | Image reveal | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper71) · [Inspect](https://skipper-ui.vercel.app/v1/skipper71) | [Upstream Ref](https://skipper-ui.com/v1/skipper71) |
-| `skipper72` | Horizontal Text reveal  | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper72) · [Inspect](https://skipper-ui.vercel.app/v1/skipper72) | [Upstream Ref](https://skipper-ui.com/v1/skipper72) |
-| `skipper73` | Infinite canvas | GSAP, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper73) · [Inspect](https://skipper-ui.vercel.app/v1/skipper73) | [Upstream Ref](https://skipper-ui.com/v1/skipper73) |
-| `skipper74` | Timeline calendar | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper74) · [Inspect](https://skipper-ui.vercel.app/v1/skipper74) | [Upstream Ref](https://skipper-ui.com/v1/skipper74) |
-| `skipper75` | Apple Navbar V002 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper75) · [Inspect](https://skipper-ui.vercel.app/v1/skipper75) | [Upstream Ref](https://skipper-ui.com/v1/skipper75) |
-| `skipper76` | Apple Feature Block | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper76) · [Inspect](https://skipper-ui.vercel.app/v1/skipper76) | [Upstream Ref](https://skipper-ui.com/v1/skipper76) |
-| `skipper77` | Apple carousel | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper77) · [Inspect](https://skipper-ui.vercel.app/v1/skipper77) | [Upstream Ref](https://skipper-ui.com/v1/skipper77) |
-| `skipper78` | Dia Browser's Carousal | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper78) · [Inspect](https://skipper-ui.vercel.app/v1/skipper78) | [Upstream Ref](https://skipper-ui.com/v1/skipper78) |
-| `skipper79` | Team showcase scroll | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper79) · [Inspect](https://skipper-ui.vercel.app/v1/skipper79) | [Upstream Ref](https://skipper-ui.com/v1/skipper79) |
-| `skipper80` | Projects Showcase | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper80) · [Inspect](https://skipper-ui.vercel.app/v1/skipper80) | [Upstream Ref](https://skipper-ui.com/v1/skipper80) |
-| `skipper81` | AI Input 001 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper81) · [Inspect](https://skipper-ui.vercel.app/v1/skipper81) | [Upstream Ref](https://skipper-ui.com/v1/skipper81) |
-| `skipper82` | AI Input 002 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper82) · [Inspect](https://skipper-ui.vercel.app/v1/skipper82) | [Upstream Ref](https://skipper-ui.com/v1/skipper82) |
-| `skipper83` | AI Input 003 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper83) · [Inspect](https://skipper-ui.vercel.app/v1/skipper83) | [Upstream Ref](https://skipper-ui.com/v1/skipper83) |
-| `skipper84` | AI Input 004 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper84) · [Inspect](https://skipper-ui.vercel.app/v1/skipper84) | [Upstream Ref](https://skipper-ui.com/v1/skipper84) |
-| `skipper85` | AI Input 005 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper85) · [Inspect](https://skipper-ui.vercel.app/v1/skipper85) | [Upstream Ref](https://skipper-ui.com/v1/skipper85) |
-| `skipper86` | Apple Ai gradient | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper86) · [Inspect](https://skipper-ui.vercel.app/v1/skipper86) | [Upstream Ref](https://skipper-ui.com/v1/skipper86) |
-| `skipper87` | Scroll with fade effect | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper87) · [Inspect](https://skipper-ui.vercel.app/v1/skipper87) | [Upstream Ref](https://skipper-ui.com/v1/skipper87) |
-| `skipper88` | 3D Rolling Text on scroll | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper88) · [Inspect](https://skipper-ui.vercel.app/v1/skipper88) | [Upstream Ref](https://skipper-ui.com/v1/skipper88) |
-| `skipper89` | Scroll progress 001 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper89) · [Inspect](https://skipper-ui.vercel.app/v1/skipper89) | [Upstream Ref](https://skipper-ui.com/v1/skipper89) |
-| `skipper90` | Gradient hover cards | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper90) · [Inspect](https://skipper-ui.vercel.app/v1/skipper90) | [Upstream Ref](https://skipper-ui.com/v1/skipper90) |
-| `skipper91` | video player 002  | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper91) · [Inspect](https://skipper-ui.vercel.app/v1/skipper91) | [Upstream Ref](https://skipper-ui.com/v1/skipper91) |
-| `skipper92` | Vercel Command Search | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper92) · [Inspect](https://skipper-ui.vercel.app/v1/skipper92) | [Upstream Ref](https://skipper-ui.com/v1/skipper92) |
-| `skipper93` | Gesture Field - Magnetic Constellation | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper93) · [Inspect](https://skipper-ui.vercel.app/v1/skipper93) | *(Original Local Primitive — Upstream 404)* |
-| `skipper94` | Scroll progress 002 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper94) · [Inspect](https://skipper-ui.vercel.app/v1/skipper94) | [Upstream Ref](https://skipper-ui.com/v1/skipper94) |
-| `skipper95` | Scroll progress 003 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper95) · [Inspect](https://skipper-ui.vercel.app/v1/skipper95) | [Upstream Ref](https://skipper-ui.com/v1/skipper95) |
-| `skipper96` | Expandable tabs navigation | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper96) · [Inspect](https://skipper-ui.vercel.app/v1/skipper96) | [Upstream Ref](https://skipper-ui.com/v1/skipper96) |
-| `skipper97` | video player 003 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper97) · [Inspect](https://skipper-ui.vercel.app/v1/skipper97) | [Upstream Ref](https://skipper-ui.com/v1/skipper97) |
-| `skipper98` | Vertical tooltip menu | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper98) · [Inspect](https://skipper-ui.vercel.app/v1/skipper98) | [Upstream Ref](https://skipper-ui.com/v1/skipper98) |
-| `skipper99` | Animated icons 002 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper99) · [Inspect](https://skipper-ui.vercel.app/v1/skipper99) | [Upstream Ref](https://skipper-ui.com/v1/skipper99) |
-| `skipper100` | Draggable snap button | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper100) · [Inspect](https://skipper-ui.vercel.app/v1/skipper100) | [Upstream Ref](https://skipper-ui.com/v1/skipper100) |
-| `skipper101` | Custom tooltip | React / CSS | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper101) · [Inspect](https://skipper-ui.vercel.app/v1/skipper101) | [Upstream Ref](https://skipper-ui.com/v1/skipper101) |
-| `skipper102` | Debug Pannel | React / CSS | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper102) · [Inspect](https://skipper-ui.vercel.app/v1/skipper102) | [Upstream Ref](https://skipper-ui.com/v1/skipper102) |
-| `skipper103` | Bouncy accordion | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper103) · [Inspect](https://skipper-ui.vercel.app/v1/skipper103) | [Upstream Ref](https://skipper-ui.com/v1/skipper103) |
-| `skipper104` | Scroll reveal grid cards | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper104) · [Inspect](https://skipper-ui.vercel.app/v1/skipper104) | [Upstream Ref](https://skipper-ui.com/v1/skipper104) |
-| `skipper105` | Auto Scale input | React / CSS | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper105) · [Inspect](https://skipper-ui.vercel.app/v1/skipper105) | [Upstream Ref](https://skipper-ui.com/v1/skipper105) |
-| `skipper106` | Smooth caret input | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper106) · [Inspect](https://skipper-ui.vercel.app/v1/skipper106) | [Upstream Ref](https://skipper-ui.com/v1/skipper106) |
-| `skipper107` | Knockout bracket | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper107) · [Inspect](https://skipper-ui.vercel.app/v1/skipper107) | [Upstream Ref](https://skipper-ui.com/v1/skipper107) |
+| Component ID | Component Title | Primary Tech Stack | Vercel Deployment |
+|:---|:---|:---|:---|
+| `skipper1` | Anime js scrollbar | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper1) · [Inspect](https://skipper-ui.vercel.app/v1/skipper1) |
+| `skipper2` | Dynamic island | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper2) · [Inspect](https://skipper-ui.vercel.app/v1/skipper2) |
+| `skipper3` | Apple play button | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper3) · [Inspect](https://skipper-ui.vercel.app/v1/skipper3) |
+| `skipper4` | Theme toggle buttons | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper4) · [Inspect](https://skipper-ui.vercel.app/v1/skipper4) |
+| `skipper5` | Things drag and scroll | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper5) · [Inspect](https://skipper-ui.vercel.app/v1/skipper5) |
+| `skipper6` | Hover members | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper6) · [Inspect](https://skipper-ui.vercel.app/v1/skipper6) |
+| `skipper7` | Nike preloader | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper7) · [Inspect](https://skipper-ui.vercel.app/v1/skipper7) |
+| `skipper8` | Words preloader | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper8) · [Inspect](https://skipper-ui.vercel.app/v1/skipper8) |
+| `skipper9` | Stairs preloader | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper9) · [Inspect](https://skipper-ui.vercel.app/v1/skipper9) |
+| `skipper10` | Double stairs preloader | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper10) · [Inspect](https://skipper-ui.vercel.app/v1/skipper10) |
+| `skipper11` | Pixel preloader | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper11) · [Inspect](https://skipper-ui.vercel.app/v1/skipper11) |
+| `skipper12` | Vercel Liquid simulation | Three.js, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper12) · [Inspect](https://skipper-ui.vercel.app/v1/skipper12) |
+| `skipper13` | Nike menu | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper13) · [Inspect](https://skipper-ui.vercel.app/v1/skipper13) |
+| `skipper14` | Ascii Simulation | Three.js, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper14) · [Inspect](https://skipper-ui.vercel.app/v1/skipper14) |
+| `skipper15` | Box loading preloader | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper15) · [Inspect](https://skipper-ui.vercel.app/v1/skipper15) |
+| `skipper16` | Card stack scroll | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper16) · [Inspect](https://skipper-ui.vercel.app/v1/skipper16) |
+| `skipper17` | Card stack with gsap and rotate | GSAP, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper17) · [Inspect](https://skipper-ui.vercel.app/v1/skipper17) |
+| `skipper18` | Image cursor trail | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper18) · [Inspect](https://skipper-ui.vercel.app/v1/skipper18) |
+| `skipper19` | Svg follow scroll | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper19) · [Inspect](https://skipper-ui.vercel.app/v1/skipper19) |
+| `skipper20` | UniSwap Country Dialog | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper20) · [Inspect](https://skipper-ui.vercel.app/v1/skipper20) |
+| `skipper21` | Family wallet | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper21) · [Inspect](https://skipper-ui.vercel.app/v1/skipper21) |
+| `skipper22` | Aave token swap | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper22) · [Inspect](https://skipper-ui.vercel.app/v1/skipper22) |
+| `skipper23` | Minimal Card Expand | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper23) · [Inspect](https://skipper-ui.vercel.app/v1/skipper23) |
+| `skipper24` | Tik tik color list | GSAP, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper24) · [Inspect](https://skipper-ui.vercel.app/v1/skipper24) |
+| `skipper25` | Music toggle btn | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper25) · [Inspect](https://skipper-ui.vercel.app/v1/skipper25) |
+| `skipper26` | Theme toggle btn | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper26) · [Inspect](https://skipper-ui.vercel.app/v1/skipper26) |
+| `skipper27` | Rolling text | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper27) · [Inspect](https://skipper-ui.vercel.app/v1/skipper27) |
+| `skipper28` | 3D perspective text | Three.js, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper28) · [Inspect](https://skipper-ui.vercel.app/v1/skipper28) |
+| `skipper29` | Siena parallax | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper29) · [Inspect](https://skipper-ui.vercel.app/v1/skipper29) |
+| `skipper30` | Oliver parallax | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper30) · [Inspect](https://skipper-ui.vercel.app/v1/skipper30) |
+| `skipper31` | Text Scroll animation | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper31) · [Inspect](https://skipper-ui.vercel.app/v1/skipper31) |
+| `skipper32` | Scroll images reveal 001 | GSAP, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper32) · [Inspect](https://skipper-ui.vercel.app/v1/skipper32) |
+| `skipper33` | Scroll images reveal 002 | GSAP, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper33) · [Inspect](https://skipper-ui.vercel.app/v1/skipper33) |
+| `skipper34` | Scroll images reveal 003 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper34) · [Inspect](https://skipper-ui.vercel.app/v1/skipper34) |
+| `skipper35` | Hover expand | GSAP, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper35) · [Inspect](https://skipper-ui.vercel.app/v1/skipper35) |
+| `skipper36` | Interactive3d Hero | Three.js, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper36) · [Inspect](https://skipper-ui.vercel.app/v1/skipper36) |
+| `skipper37` | Animated number | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper37) · [Inspect](https://skipper-ui.vercel.app/v1/skipper37) |
+| `skipper38` | Apple Navbar V001 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper38) · [Inspect](https://skipper-ui.vercel.app/v1/skipper38) |
+| `skipper39` | Canvas crowd | GSAP, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper39) · [Inspect](https://skipper-ui.vercel.app/v1/skipper39) |
+| `skipper40` | CssLink | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper40) · [Inspect](https://skipper-ui.vercel.app/v1/skipper40) |
+| `skipper41` | Progressive Blur | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper41) · [Inspect](https://skipper-ui.vercel.app/v1/skipper41) |
+| `skipper42` | Animated icons 001 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper42) · [Inspect](https://skipper-ui.vercel.app/v1/skipper42) |
+| `skipper43` | Vercel Tooltip | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper43) · [Inspect](https://skipper-ui.vercel.app/v1/skipper43) |
+| `skipper44` | Vercel scroll with blur | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper44) · [Inspect](https://skipper-ui.vercel.app/v1/skipper44) |
+| `skipper45` | Family Receive button | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper45) · [Inspect](https://skipper-ui.vercel.app/v1/skipper45) |
+| `skipper46` | Nextjs gooey menu | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper46) · [Inspect](https://skipper-ui.vercel.app/v1/skipper46) |
+| `skipper47` | Perspective carousel | Swiper, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper47) · [Inspect](https://skipper-ui.vercel.app/v1/skipper47) |
+| `skipper48` | Card swipe carousel | Swiper, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper48) · [Inspect](https://skipper-ui.vercel.app/v1/skipper48) |
+| `skipper49` | Inverted perspective carousel | Swiper, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper49) · [Inspect](https://skipper-ui.vercel.app/v1/skipper49) |
+| `skipper50` | Creative carousel 001 | Swiper, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper50) · [Inspect](https://skipper-ui.vercel.app/v1/skipper50) |
+| `skipper51` | Creative carousel 002 | Swiper, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper51) · [Inspect](https://skipper-ui.vercel.app/v1/skipper51) |
+| `skipper52` | ExpandOnHover | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper52) · [Inspect](https://skipper-ui.vercel.app/v1/skipper52) |
+| `skipper53` | ExpandOnHover vertical | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper53) · [Inspect](https://skipper-ui.vercel.app/v1/skipper53) |
+| `skipper54` | Shadcn clipPath Carousal | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper54) · [Inspect](https://skipper-ui.vercel.app/v1/skipper54) |
+| `skipper55` | Parallax Image | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper55) · [Inspect](https://skipper-ui.vercel.app/v1/skipper55) |
+| `skipper56` | Devouring details sign in | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper56) · [Inspect](https://skipper-ui.vercel.app/v1/skipper56) |
+| `skipper57` | Vercel navigation bar | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper57) · [Inspect](https://skipper-ui.vercel.app/v1/skipper57) |
+| `skipper58` | Text roll navigation | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper58) · [Inspect](https://skipper-ui.vercel.app/v1/skipper58) |
+| `skipper59` | Drawing cursor effect | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper59) · [Inspect](https://skipper-ui.vercel.app/v1/skipper59) |
+| `skipper60` | Side Scroll Navigation | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper60) · [Inspect](https://skipper-ui.vercel.app/v1/skipper60) |
+| `skipper61` | Mouse follow animations | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper61) · [Inspect](https://skipper-ui.vercel.app/v1/skipper61) |
+| `skipper62` | Loop animation hook | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper62) · [Inspect](https://skipper-ui.vercel.app/v1/skipper62) |
+| `skipper63` | Apple squicircle effect | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper63) · [Inspect](https://skipper-ui.vercel.app/v1/skipper63) |
+| `skipper64` | Gooey Effect | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper64) · [Inspect](https://skipper-ui.vercel.app/v1/skipper64) |
+| `skipper65` | Breakpoint indicator | React / CSS | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper65) · [Inspect](https://skipper-ui.vercel.app/v1/skipper65) |
+| `skipper66` | SVG clip path mask | React / CSS | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper66) · [Inspect](https://skipper-ui.vercel.app/v1/skipper66) |
+| `skipper67` | Video player 001 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper67) · [Inspect](https://skipper-ui.vercel.app/v1/skipper67) |
+| `skipper68` | Animated number input | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper68) · [Inspect](https://skipper-ui.vercel.app/v1/skipper68) |
+| `skipper69` | Skipper Number flow | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper69) · [Inspect](https://skipper-ui.vercel.app/v1/skipper69) |
+| `skipper70` | Text reveal box | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper70) · [Inspect](https://skipper-ui.vercel.app/v1/skipper70) |
+| `skipper71` | Image reveal | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper71) · [Inspect](https://skipper-ui.vercel.app/v1/skipper71) |
+| `skipper72` | Horizontal Text reveal | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper72) · [Inspect](https://skipper-ui.vercel.app/v1/skipper72) |
+| `skipper73` | Infinite canvas | GSAP, Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper73) · [Inspect](https://skipper-ui.vercel.app/v1/skipper73) |
+| `skipper74` | Timeline calendar | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper74) · [Inspect](https://skipper-ui.vercel.app/v1/skipper74) |
+| `skipper75` | Apple Navbar V002 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper75) · [Inspect](https://skipper-ui.vercel.app/v1/skipper75) |
+| `skipper76` | Apple Feature Block | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper76) · [Inspect](https://skipper-ui.vercel.app/v1/skipper76) |
+| `skipper77` | Apple carousel | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper77) · [Inspect](https://skipper-ui.vercel.app/v1/skipper77) |
+| `skipper78` | Dia Browser's Carousal | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper78) · [Inspect](https://skipper-ui.vercel.app/v1/skipper78) |
+| `skipper79` | Team showcase scroll | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper79) · [Inspect](https://skipper-ui.vercel.app/v1/skipper79) |
+| `skipper80` | Projects Showcase | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper80) · [Inspect](https://skipper-ui.vercel.app/v1/skipper80) |
+| `skipper81` | AI Input 001 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper81) · [Inspect](https://skipper-ui.vercel.app/v1/skipper81) |
+| `skipper82` | AI Input 002 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper82) · [Inspect](https://skipper-ui.vercel.app/v1/skipper82) |
+| `skipper83` | AI Input 003 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper83) · [Inspect](https://skipper-ui.vercel.app/v1/skipper83) |
+| `skipper84` | AI Input 004 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper84) · [Inspect](https://skipper-ui.vercel.app/v1/skipper84) |
+| `skipper85` | AI Input 005 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper85) · [Inspect](https://skipper-ui.vercel.app/v1/skipper85) |
+| `skipper86` | Apple Ai gradient | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper86) · [Inspect](https://skipper-ui.vercel.app/v1/skipper86) |
+| `skipper87` | Scroll with fade effect | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper87) · [Inspect](https://skipper-ui.vercel.app/v1/skipper87) |
+| `skipper88` | 3D Rolling Text on scroll | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper88) · [Inspect](https://skipper-ui.vercel.app/v1/skipper88) |
+| `skipper89` | Scroll progress 001 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper89) · [Inspect](https://skipper-ui.vercel.app/v1/skipper89) |
+| `skipper90` | Gradient hover cards | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper90) · [Inspect](https://skipper-ui.vercel.app/v1/skipper90) |
+| `skipper91` | video player 002 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper91) · [Inspect](https://skipper-ui.vercel.app/v1/skipper91) |
+| `skipper92` | Vercel Command Search | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper92) · [Inspect](https://skipper-ui.vercel.app/v1/skipper92) |
+| `skipper93` | Gesture Field - Magnetic Constellation | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper93) · [Inspect](https://skipper-ui.vercel.app/v1/skipper93) |
+| `skipper94` | Scroll progress 002 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper94) · [Inspect](https://skipper-ui.vercel.app/v1/skipper94) |
+| `skipper95` | Scroll progress 003 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper95) · [Inspect](https://skipper-ui.vercel.app/v1/skipper95) |
+| `skipper96` | Expandable tabs navigation | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper96) · [Inspect](https://skipper-ui.vercel.app/v1/skipper96) |
+| `skipper97` | video player 003 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper97) · [Inspect](https://skipper-ui.vercel.app/v1/skipper97) |
+| `skipper98` | Vertical tooltip menu | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper98) · [Inspect](https://skipper-ui.vercel.app/v1/skipper98) |
+| `skipper99` | Animated icons 002 | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper99) · [Inspect](https://skipper-ui.vercel.app/v1/skipper99) |
+| `skipper100` | Draggable snap button | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper100) · [Inspect](https://skipper-ui.vercel.app/v1/skipper100) |
+| `skipper101` | Custom tooltip | React / CSS | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper101) · [Inspect](https://skipper-ui.vercel.app/v1/skipper101) |
+| `skipper102` | Debug Pannel | React / CSS | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper102) · [Inspect](https://skipper-ui.vercel.app/v1/skipper102) |
+| `skipper103` | Bouncy accordion | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper103) · [Inspect](https://skipper-ui.vercel.app/v1/skipper103) |
+| `skipper104` | Scroll reveal grid cards | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper104) · [Inspect](https://skipper-ui.vercel.app/v1/skipper104) |
+| `skipper105` | Auto Scale input | React / CSS | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper105) · [Inspect](https://skipper-ui.vercel.app/v1/skipper105) |
+| `skipper106` | Smooth caret input | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper106) · [Inspect](https://skipper-ui.vercel.app/v1/skipper106) |
+| `skipper107` | Knockout bracket | Framer Motion | [Live Demo](https://skipper-ui.vercel.app/v1/preview/skipper107) · [Inspect](https://skipper-ui.vercel.app/v1/skipper107) |
 
 ---
 
@@ -257,7 +257,8 @@ Skipper-UI/
 ├── .github/
 │   ├── workflows/
 │   │   ├── ci.yml                          # Continuous Integration & quality gate
-│   │   └── vercel-deployment-check.yml     # Automated verification of Vercel preview URLs
+│   │   ├── vercel-deploy.yml               # Multi-target Vercel deployment (Preview, Prod, On-Demand)
+│   │   └── vercel-deployment-check.yml     # Automated verification of live deployment URLs
 │   ├── ISSUE_TEMPLATE/                     # Bug report and enhancement templates
 │   ├── dependabot.yml                      # Automated dependency governance & semver-major guards
 │   └── PULL_REQUEST_TEMPLATE.md            # PR checklist & quality gates
@@ -330,6 +331,7 @@ flowchart LR
 
 The repository uses GitHub Actions for continuous integration:
 - **[`.github/workflows/ci.yml`](.github/workflows/ci.yml)** runs on every push and pull request to `main`. It validates registry parity, strict type checking, asset integrity, production build generation, and runs the Playwright headless smoke suite.
+- **[`.github/workflows/vercel-deploy.yml`](.github/workflows/vercel-deploy.yml)** automates multi-target deployments (Production on `main`, Previews, or on-demand via `workflow_dispatch` with automated Playwright validation).
 - **[`.github/workflows/vercel-deployment-check.yml`](.github/workflows/vercel-deployment-check.yml)** triggers upon successful Vercel deployments to verify that the live production URLs respond with HTTP 200 and pass end-to-end browser tests.
 - **[`.github/dependabot.yml`](.github/dependabot.yml)** provides automated dependency management with `ignore` rules safeguarding core frameworks (`next`, `tailwindcss`, `typescript`) from unreviewed major breaking changes.
 
