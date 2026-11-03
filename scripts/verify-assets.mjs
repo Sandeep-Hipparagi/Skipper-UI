@@ -12,6 +12,21 @@ const files = (await Promise.all(sourceDirs.map(async (directory) =>
 ))).flat();
 const checked = new Set();
 const errors = [];
+const svgIds = new Map();
+
+for (const filePath of files.filter((file) => file.endsWith(".tsx") && file.includes(`${path.sep}components${path.sep}v1${path.sep}`))) {
+  const file = path.relative(root, filePath);
+  const source = await fs.readFile(filePath, "utf8");
+  if (!/^\s*["']use client["'];/.test(source)) errors.push(`${file}: missing "use client" directive`);
+  if (source.includes("http://localhost:3000")) errors.push(`${file}: contains a hardcoded localhost preview URL`);
+
+  for (const match of source.matchAll(/<(?:filter|clipPath)\b[^>]*\bid=["']([^"']+)["']/gi)) {
+    const id = match[1];
+    if (svgIds.has(id)) errors.push(`${file}: SVG id "${id}" duplicates ${svgIds.get(id)}`);
+    else svgIds.set(id, file);
+  }
+
+}
 
 for (const filePath of files) {
   const file = path.relative(root, filePath);

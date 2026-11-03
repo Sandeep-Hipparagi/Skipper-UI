@@ -20,6 +20,7 @@
     "test": "node --test tests/catalog.test.mjs",
     "typecheck": "tsc --noEmit",
     "verify:assets": "node scripts/verify-assets.mjs",
+    "verify:source": "node scripts/verify-assets.mjs",
     "smoke": "node scripts/audit-skippers.mjs",
     "verify": "npm test && npm run typecheck && npm run verify:assets && npm run build",
     "export:component": "node --experimental-strip-types scripts/export-component.ts",
@@ -50,12 +51,12 @@
     "dialkit": "^2.1.0",
     "embla-carousel-autoplay": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
-    "framer-motion": "^14.9.0",
+    "framer-motion": "^14.7.1",
     "gsap": "^3.15.0",
     "lenis": "^1.3.27",
-    "lucide-react": "^1.65.0",
+    "lucide-react": "^1.62.0",
     "media-chrome": "^4.19.4",
-    "next": "^16.4.3",
+    "next": "^15.5.28",
     "playwright": "^1.49.1",
     "postcss": "^8.5.32",
     "react": "^19.3.1",
@@ -63,14 +64,14 @@
     "react-use-measure": "^2.1.7",
     "swiper": "^14.3.0",
     "tailwind-merge": "^3.7.0",
-    "tailwindcss": "^4.3.3",
-    "three": "^0.187.0"
+    "tailwindcss": "^3.4.19",
+    "three": "^0.186.1"
   },
   "devDependencies": {
-    "@types/node": "^26.6.6",
+    "@types/node": "^22.10.2",
     "tesseract.js": "^7.0.0",
     "tsx": "^4.19.2",
-    "typescript": "^7.0.2"
+    "typescript": "^5.7.2"
   },
   "overrides": {
     "postcss": "^8.5.32"
