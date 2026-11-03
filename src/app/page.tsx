@@ -25,6 +25,8 @@ import {
   Dice5,
   ArrowRight,
   Copy,
+  ShieldCheck,
+  CheckCircle2,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
@@ -53,6 +55,9 @@ export interface ComponentRecord {
   techStack: string[];
   hooks: string[];
   cleanups: number;
+  identical?: string[];
+  similarity?: string[];
+  uniqueness?: string[];
 }
 
 // Mouse-tracking glow card inspired by skipper90 with champagne cursor tint
@@ -116,6 +121,7 @@ export default function RegistryDashboard() {
   const [activeModalSlug, setActiveModalSlug] = useState<string | null>(null);
   const [modalViewport, setModalViewport] = useState<"full" | "desktop" | "tablet" | "mobile">("full");
   const [modalMountKey, setModalMountKey] = useState(0);
+  const [modalTab, setModalTab] = useState<"stage" | "specs">("stage");
   const [featuredDemo, setFeaturedDemo] = useState<"equalizer" | "switch" | "icons">("equalizer");
   const [copyCommandLabel, setCopyCommandLabel] = useState("Copy CLI Command");
 
@@ -214,6 +220,7 @@ export default function RegistryDashboard() {
     if (randomComp) {
       setActiveModalSlug(randomComp.id);
       setModalMountKey((k) => k + 1);
+      setModalTab("stage");
     }
   };
 
@@ -547,6 +554,7 @@ export default function RegistryDashboard() {
                             onClick={() => {
                               setActiveModalSlug(comp.id);
                               setModalMountKey((k) => k + 1);
+                              setModalTab("stage");
                             }}
                             className="flex items-center gap-1.5 rounded-xl bg-foreground text-background px-3.5 py-2 text-xs font-semibold shadow-md hover:opacity-90 transition-opacity"
                           >
@@ -555,7 +563,7 @@ export default function RegistryDashboard() {
                           </button>
                         )}
                         <Link
-                          href={comp.localSpecUrl}
+                          href={`${comp.localSpecUrl}?view=specs#specs`}
                           className="flex items-center gap-1.5 rounded-xl bg-background border border-border px-3.5 py-2 text-xs font-semibold hover:bg-muted text-foreground transition-colors shadow-md"
                         >
                           <Code2 className="size-3.5 text-sky-500" />
@@ -605,6 +613,7 @@ export default function RegistryDashboard() {
                           onClick={() => {
                             setActiveModalSlug(comp.id);
                             setModalMountKey((k) => k + 1);
+                            setModalTab("stage");
                           }}
                           className="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:underline"
                         >
@@ -617,7 +626,7 @@ export default function RegistryDashboard() {
 
                     <div className="flex items-center gap-1.5">
                       <Link
-                        href={comp.localSpecUrl}
+                        href={`${comp.localSpecUrl}?view=specs#specs`}
                         className="rounded-lg border bg-background p-1.5 text-muted-foreground hover:text-foreground transition-colors shadow-2xs"
                         title="Component Specifications"
                       >
@@ -653,6 +662,7 @@ export default function RegistryDashboard() {
                     if (comp.status !== "reserved") {
                       setActiveModalSlug(comp.id);
                       setModalMountKey((k) => k + 1);
+                      setModalTab("stage");
                     }
                   }}
                   className="aspect-video w-full rounded-lg overflow-hidden bg-muted/40 mb-2 cursor-pointer relative"
@@ -676,8 +686,8 @@ export default function RegistryDashboard() {
                   </h4>
                 </div>
                 <div className="mt-2 pt-2 border-t flex items-center justify-between">
-                  <Link href={comp.localSpecUrl} className="text-[10px] text-primary hover:underline font-medium">
-                    Inspect
+                  <Link href={`${comp.localSpecUrl}?view=specs#specs`} className="text-[10px] text-primary hover:underline font-medium">
+                    Specs
                   </Link>
                   <Link href={comp.localPreviewUrl} target="_blank" className="text-muted-foreground hover:text-foreground">
                     <ExternalLink className="size-3" />
@@ -730,6 +740,7 @@ export default function RegistryDashboard() {
                             onClick={() => {
                               setActiveModalSlug(comp.id);
                               setModalMountKey((k) => k + 1);
+                              setModalTab("stage");
                             }}
                             className="rounded-md bg-foreground text-background p-1.5 hover:opacity-90"
                             title="Test Inline"
@@ -738,9 +749,9 @@ export default function RegistryDashboard() {
                           </button>
                         )}
                         <Link
-                          href={comp.localSpecUrl}
+                          href={`${comp.localSpecUrl}?view=specs#specs`}
                           className="rounded-md border bg-background p-1.5 text-muted-foreground hover:text-foreground"
-                          title="Component Details"
+                          title="Component Specifications"
                         >
                           <Code2 className="size-3 text-sky-500" />
                         </Link>
@@ -825,88 +836,124 @@ export default function RegistryDashboard() {
                   </div>
                 </div>
 
-                {/* Center / Right: Viewport Sizing Controls & Actions */}
+                {/* Center / Right: Tabs & Viewport Sizing Controls & Actions */}
                 <div className="flex items-center gap-2">
-                  <button
-                    type="button"
-                    data-testid="copy-cli-command"
-                    onClick={async () => {
-                      if (!activeModalSlug) return;
-                      const number = activeModalSlug.replace(/^skipper/, "");
-                      const command = `npx shadcn@latest add https://${window.location.host}/r/skiper${number}.json`;
-                      try {
-                        await navigator.clipboard.writeText(command);
-                        setCopyCommandLabel("Copied!");
-                        window.setTimeout(() => setCopyCommandLabel("Copy CLI Command"), 1800);
-                      } catch {
-                        setCopyCommandLabel("Clipboard unavailable");
-                        window.setTimeout(() => setCopyCommandLabel("Copy CLI Command"), 1800);
-                      }
-                    }}
-                    className="flex items-center gap-1.5 rounded-lg border bg-background px-2.5 py-1 text-xs font-medium hover:bg-muted"
-                  >
-                    <Copy className="size-3.5" />{copyCommandLabel}
-                  </button>
-                  {/* Viewport switchers in modal */}
-                  <div className="hidden sm:flex items-center rounded-lg border bg-background/60 p-0.5">
+                  {/* In-Modal View Mode Switcher: Stage vs Specs */}
+                  <div className="flex items-center rounded-lg border bg-muted/40 p-0.5 text-xs shadow-2xs">
                     <button
-                      onClick={() => setModalViewport("full")}
+                      type="button"
+                      onClick={() => setModalTab("stage")}
                       className={cn(
-                        "p-1.5 rounded transition-colors",
-                        modalViewport === "full" ? "bg-muted text-foreground" : "text-muted-foreground hover:text-foreground"
+                        "flex items-center gap-1.5 px-2.5 py-1 rounded font-medium transition-all",
+                        modalTab === "stage"
+                          ? "bg-background text-foreground shadow-2xs border border-border"
+                          : "text-muted-foreground hover:text-foreground"
                       )}
-                      title="Fluid Width"
                     >
-                      <Maximize2 className="size-3.5" />
+                      <Play className="size-3 fill-current text-emerald-500" />
+                      <span>Stage</span>
                     </button>
                     <button
-                      onClick={() => setModalViewport("desktop")}
+                      type="button"
+                      onClick={() => setModalTab("specs")}
                       className={cn(
-                        "p-1.5 rounded transition-colors",
-                        modalViewport === "desktop" ? "bg-muted text-foreground" : "text-muted-foreground hover:text-foreground"
+                        "flex items-center gap-1.5 px-2.5 py-1 rounded font-medium transition-all",
+                        modalTab === "specs"
+                          ? "bg-background text-foreground shadow-2xs border border-border"
+                          : "text-muted-foreground hover:text-foreground"
                       )}
-                      title="Desktop Frame (1024px)"
                     >
-                      <Laptop className="size-3.5" />
-                    </button>
-                    <button
-                      onClick={() => setModalViewport("tablet")}
-                      className={cn(
-                        "p-1.5 rounded transition-colors",
-                        modalViewport === "tablet" ? "bg-muted text-foreground" : "text-muted-foreground hover:text-foreground"
-                      )}
-                      title="Tablet Frame (768px)"
-                    >
-                      <Tablet className="size-3.5" />
-                    </button>
-                    <button
-                      onClick={() => setModalViewport("mobile")}
-                      className={cn(
-                        "p-1.5 rounded transition-colors",
-                        modalViewport === "mobile" ? "bg-muted text-foreground" : "text-muted-foreground hover:text-foreground"
-                      )}
-                      title="Mobile Frame (390px)"
-                    >
-                      <Smartphone className="size-3.5" />
+                      <ShieldCheck className="size-3 text-sky-500" />
+                      <span>Specs</span>
                     </button>
                   </div>
 
-                  {/* Re-mount button */}
-                  <button
-                    onClick={() => setModalMountKey((k) => k + 1)}
-                    className="flex items-center gap-1 rounded-lg border bg-background px-2.5 py-1 text-xs font-medium text-muted-foreground hover:text-foreground transition-colors"
-                    title="Reset & replay entrance animations"
-                  >
-                    <RotateCcw className="size-3" />
-                    <span className="hidden sm:inline">Reset</span>
-                  </button>
+                  {modalTab === "stage" && (
+                    <>
+                      <button
+                        type="button"
+                        data-testid="copy-cli-command"
+                        onClick={async () => {
+                          if (!activeModalSlug) return;
+                          const number = activeModalSlug.replace(/^skipper/, "");
+                          const command = `npx shadcn@latest add https://${window.location.host}/r/skiper${number}.json`;
+                          try {
+                            await navigator.clipboard.writeText(command);
+                            setCopyCommandLabel("Copied!");
+                            window.setTimeout(() => setCopyCommandLabel("Copy CLI Command"), 1800);
+                          } catch {
+                            setCopyCommandLabel("Clipboard unavailable");
+                            window.setTimeout(() => setCopyCommandLabel("Copy CLI Command"), 1800);
+                          }
+                        }}
+                        className="hidden lg:flex items-center gap-1.5 rounded-lg border bg-background px-2.5 py-1 text-xs font-medium hover:bg-muted"
+                      >
+                        <Copy className="size-3.5" />{copyCommandLabel}
+                      </button>
+
+                      {/* Viewport switchers in modal */}
+                      <div className="hidden sm:flex items-center rounded-lg border bg-background/60 p-0.5">
+                        <button
+                          onClick={() => setModalViewport("full")}
+                          className={cn(
+                            "p-1.5 rounded transition-colors",
+                            modalViewport === "full" ? "bg-muted text-foreground" : "text-muted-foreground hover:text-foreground"
+                          )}
+                          title="Fluid Width"
+                        >
+                          <Maximize2 className="size-3.5" />
+                        </button>
+                        <button
+                          onClick={() => setModalViewport("desktop")}
+                          className={cn(
+                            "p-1.5 rounded transition-colors",
+                            modalViewport === "desktop" ? "bg-muted text-foreground" : "text-muted-foreground hover:text-foreground"
+                          )}
+                          title="Desktop Frame (1024px)"
+                        >
+                          <Laptop className="size-3.5" />
+                        </button>
+                        <button
+                          onClick={() => setModalViewport("tablet")}
+                          className={cn(
+                            "p-1.5 rounded transition-colors",
+                            modalViewport === "tablet" ? "bg-muted text-foreground" : "text-muted-foreground hover:text-foreground"
+                          )}
+                          title="Tablet Frame (768px)"
+                        >
+                          <Tablet className="size-3.5" />
+                        </button>
+                        <button
+                          onClick={() => setModalViewport("mobile")}
+                          className={cn(
+                            "p-1.5 rounded transition-colors",
+                            modalViewport === "mobile" ? "bg-muted text-foreground" : "text-muted-foreground hover:text-foreground"
+                          )}
+                          title="Mobile Frame (390px)"
+                        >
+                          <Smartphone className="size-3.5" />
+                        </button>
+                      </div>
+
+                      {/* Re-mount button */}
+                      <button
+                        onClick={() => setModalMountKey((k) => k + 1)}
+                        className="flex items-center gap-1 rounded-lg border bg-background px-2.5 py-1 text-xs font-medium text-muted-foreground hover:text-foreground transition-colors"
+                        title="Reset & replay entrance animations"
+                      >
+                        <RotateCcw className="size-3" />
+                        <span className="hidden sm:inline">Reset</span>
+                      </button>
+                    </>
+                  )}
 
                   <Link
-                    href={`/v1/${activeModalSlug}`}
+                    href={`/v1/${activeModalSlug}?view=specs#specs`}
                     className="flex items-center gap-1.5 rounded-lg border bg-background px-2.5 py-1 text-xs font-semibold hover:bg-muted text-foreground transition-colors"
+                    title="Open Fullscreen Specifications Page"
                   >
                     <Code2 className="size-3.5 text-sky-500" />
-                    <span className="hidden sm:inline">Specs</span>
+                    <span className="hidden sm:inline">Specs Page</span>
                   </Link>
 
                   <Link
@@ -927,24 +974,127 @@ export default function RegistryDashboard() {
                 </div>
               </div>
 
-              {/* Modal Component Stage with Responsive Container */}
-              <div className="flex-1 relative flex items-center justify-center p-6 bg-background bg-dot-grid overflow-auto">
-                <div className={cn(
-                  "transition-all duration-300 flex items-center justify-center",
-                  modalViewport === "full" && "w-full max-w-full",
-                  modalViewport === "desktop" && "w-full max-w-4xl rounded-2xl border bg-card/60 p-6 shadow-xl",
-                  modalViewport === "tablet" && "w-full max-w-2xl rounded-2xl border bg-card/60 p-6 shadow-xl",
-                  modalViewport === "mobile" && "w-full max-w-[390px] rounded-3xl border-2 bg-card p-4 shadow-2xl overflow-hidden min-h-[580px]"
-                )}>
-                  <ActiveComponent key={modalMountKey} />
+              {/* Modal Component Stage with Responsive Container or Specs View */}
+              {modalTab === "stage" ? (
+                <div className="flex-1 relative flex items-center justify-center p-6 bg-background bg-dot-grid overflow-auto">
+                  <div className={cn(
+                    "transition-all duration-300 flex items-center justify-center",
+                    modalViewport === "full" && "w-full max-w-full",
+                    modalViewport === "desktop" && "w-full max-w-4xl rounded-2xl border bg-card/60 p-6 shadow-xl",
+                    modalViewport === "tablet" && "w-full max-w-2xl rounded-2xl border bg-card/60 p-6 shadow-xl",
+                    modalViewport === "mobile" && "w-full max-w-[390px] rounded-3xl border-2 bg-card p-4 shadow-2xl overflow-hidden min-h-[580px]"
+                  )}>
+                    <ActiveComponent key={modalMountKey} />
+                  </div>
                 </div>
-              </div>
+              ) : (
+                <div className="flex-1 relative p-6 sm:p-8 bg-background overflow-y-auto">
+                  <div className="max-w-4xl mx-auto space-y-6">
+                    {/* Architectural Overview Card */}
+                    <div className="rounded-2xl border bg-card p-6 shadow-xs">
+                      <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+                        <span className="text-xs uppercase tracking-widest text-muted-foreground font-semibold">
+                          Architecture & Specifications
+                        </span>
+                        <Link
+                          href={`/v1/${activeModalSlug}?view=specs#specs`}
+                          className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:underline"
+                        >
+                          <span>Open Dedicated Specs Page</span>
+                          <ArrowRight className="size-3.5" />
+                        </Link>
+                      </div>
+                      <h3 className="text-xl font-bold tracking-tight text-foreground mb-2">
+                        {activeRecord?.title}
+                      </h3>
+                      <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed mb-4">
+                        {activeRecord?.description}
+                      </p>
+
+                      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t text-xs">
+                        <div>
+                          <span className="text-muted-foreground block mb-0.5">Collection</span>
+                          <span className="font-semibold text-foreground">{activeRecord?.collection}</span>
+                        </div>
+                        <div>
+                          <span className="text-muted-foreground block mb-0.5">Tier</span>
+                          <span className="font-semibold text-foreground capitalize">{activeRecord?.tier}</span>
+                        </div>
+                        <div>
+                          <span className="text-muted-foreground block mb-0.5">Scale</span>
+                          <span className="font-semibold text-foreground font-mono">{activeRecord?.lineCount} Lines</span>
+                        </div>
+                        <div>
+                          <span className="text-muted-foreground block mb-0.5">Physics</span>
+                          <span className="font-semibold text-foreground truncate block">{activeRecord?.springDetails}</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Three Breakdown Columns */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                      {/* Visual & Interaction */}
+                      <div className="rounded-2xl border bg-card p-5 shadow-xs">
+                        <div className="flex items-center gap-2 text-xs font-semibold text-emerald-600 dark:text-emerald-400 mb-3">
+                          <CheckCircle2 className="size-3.5" />
+                          <span>Visual & Interaction Specs</span>
+                        </div>
+                        <ul className="space-y-2 text-[11px] text-muted-foreground leading-relaxed">
+                          {activeRecord?.identical?.map((item, idx) => (
+                            <li key={idx} className="flex items-start gap-1.5">
+                              <span className="size-1 rounded-full bg-emerald-500 mt-1.5 shrink-0" />
+                              <span><strong className="text-foreground">{item.split(':')[0]}:</strong> {item.split(':').slice(1).join(':')}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      {/* Framework Modernization */}
+                      <div className="rounded-2xl border bg-card p-5 shadow-xs">
+                        <div className="flex items-center gap-2 text-xs font-semibold text-sky-600 dark:text-sky-400 mb-3">
+                          <Layers className="size-3.5" />
+                          <span>Framework Modernization</span>
+                        </div>
+                        <ul className="space-y-2 text-[11px] text-muted-foreground leading-relaxed">
+                          {activeRecord?.similarity?.map((item, idx) => (
+                            <li key={idx} className="flex items-start gap-1.5">
+                              <span className="size-1 rounded-full bg-sky-500 mt-1.5 shrink-0" />
+                              <span><strong className="text-foreground">{item.split(':')[0]}:</strong> {item.split(':').slice(1).join(':')}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      {/* Engineering Hardening */}
+                      <div className="rounded-2xl border bg-card p-5 shadow-xs">
+                        <div className="flex items-center gap-2 text-xs font-semibold text-purple-600 dark:text-purple-400 mb-3">
+                          <Sparkles className="size-3.5" />
+                          <span>Engineering Hardening</span>
+                        </div>
+                        <ul className="space-y-2 text-[11px] text-muted-foreground leading-relaxed">
+                          {activeRecord?.uniqueness?.map((item, idx) => (
+                            <li key={idx} className="flex items-start gap-1.5">
+                              <span className="size-1 rounded-full bg-purple-500 mt-1.5 shrink-0" />
+                              <span><strong className="text-foreground">{item.split(':')[0]}:</strong> {item.split(':').slice(1).join(':')}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
 
               {/* Modal Footer Controls */}
               <div className="border-t px-6 py-2.5 bg-card/40 flex items-center justify-between text-xs text-muted-foreground">
                 <div className="flex items-center gap-2">
-                  <span className="size-2 rounded-full bg-emerald-500 animate-pulse" />
-                  <span className="font-medium text-foreground">Interactive Live Sandbox</span>
+                  <span className={cn(
+                    "size-2 rounded-full",
+                    modalTab === "stage" ? "bg-emerald-500 animate-pulse" : "bg-sky-500"
+                  )} />
+                  <span className="font-medium text-foreground">
+                    {modalTab === "stage" ? "Interactive Live Sandbox" : "Verified Architectural Specifications"}
+                  </span>
                   <span className="text-border">·</span>
                   <span className="font-mono text-[11px]">{activeRecord?.lineCount} Lines</span>
                 </div>

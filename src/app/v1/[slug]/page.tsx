@@ -33,16 +33,94 @@ interface PageProps {
   params: Promise<{
     slug: string;
   }>;
+  searchParams?: Promise<{
+    view?: string;
+    tab?: string;
+  }>;
 }
 
-export default function ComponentDetailPage({ params }: PageProps) {
+export default function ComponentDetailPage({ params, searchParams }: PageProps) {
   const { slug } = use(params);
+  const resolvedSearchParams = searchParams ? use(searchParams) : undefined;
   const { isDark, toggleTheme } = useTheme();
-  const [viewMode, setViewMode] = useState<"stage" | "specs" | "code">("stage");
+
+  const initialMode = (() => {
+    const v = (resolvedSearchParams?.view || resolvedSearchParams?.tab || "").toLowerCase();
+    if (v === "specs" || v === "specification" || v === "specifications") return "specs";
+    if (v === "code" || v === "integration") return "code";
+    return "stage";
+  })();
+
+  const [viewMode, setViewMode] = useState<"stage" | "specs" | "code">(initialMode);
   const [viewportSize, setViewportSize] = useState<"full" | "desktop" | "tablet" | "mobile">("full");
   const [mountKey, setMountKey] = useState(0);
   const [showGrid, setShowGrid] = useState(true);
   const [copied, setCopied] = useState(false);
+
+  // Synchronize viewMode with URL hash and query parameters
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const hash = window.location.hash.toLowerCase();
+      const urlParams = new URLSearchParams(window.location.search);
+      const viewParam = (urlParams.get("view") || urlParams.get("tab") || "").toLowerCase();
+
+      let targetMode: "stage" | "specs" | "code" | null = null;
+      if (
+        viewParam === "specs" ||
+        viewParam === "specification" ||
+        viewParam === "specifications" ||
+        hash === "#specs" ||
+        hash === "#specifications"
+      ) {
+        targetMode = "specs";
+      } else if (
+        viewParam === "code" ||
+        viewParam === "integration" ||
+        hash === "#code"
+      ) {
+        targetMode = "code";
+      } else if (viewParam === "stage" || hash === "#stage") {
+        targetMode = "stage";
+      }
+
+      if (targetMode) {
+        setViewMode(targetMode);
+        if (targetMode === "specs" || hash === "#specs" || hash === "#specifications") {
+          setTimeout(() => {
+            const el = document.getElementById("specs") || document.getElementById("specifications");
+            if (el) {
+              el.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+          }, 80);
+        }
+      }
+    }
+  }, []);
+
+  const handleViewModeChange = (mode: "stage" | "specs" | "code") => {
+    setViewMode(mode);
+    if (typeof window !== "undefined") {
+      const url = new URL(window.location.href);
+      if (mode === "stage") {
+        url.searchParams.delete("view");
+        url.searchParams.delete("tab");
+        url.hash = "";
+      } else {
+        url.searchParams.set("view", mode);
+        url.hash = mode;
+      }
+      window.history.replaceState(null, "", url.toString());
+
+      if (mode === "specs") {
+        setTimeout(() => {
+          const el = document.getElementById("specs") || document.getElementById("specifications");
+          if (el) {
+            el.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        }, 50);
+      }
+    }
+  };
 
   const record = sideBySideList.find((r) => r.id === slug);
   const Component = componentRegistry[slug]?.component;
@@ -137,7 +215,7 @@ export default function Showcase() {
             <div className="hidden sm:flex items-center rounded-lg border border-border bg-background/60 p-0.5 shadow-2xs">
               {prevComponent ? (
                 <Link
-                  href={`/v1/${prevComponent.id}`}
+                  href={`/v1/${prevComponent.id}${viewMode !== "stage" ? `?view=${viewMode}#${viewMode}` : ""}`}
                   className="flex size-7 items-center justify-center rounded text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
                   title={`Previous: ${prevComponent.id} (${prevComponent.title})`}
                 >
@@ -153,7 +231,7 @@ export default function Showcase() {
               </span>
               {nextComponent ? (
                 <Link
-                  href={`/v1/${nextComponent.id}`}
+                  href={`/v1/${nextComponent.id}${viewMode !== "stage" ? `?view=${viewMode}#${viewMode}` : ""}`}
                   className="flex size-7 items-center justify-center rounded text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
                   title={`Next: ${nextComponent.id} (${nextComponent.title})`}
                 >
@@ -179,7 +257,7 @@ export default function Showcase() {
           {/* Center: View Mode Tabs */}
           <div className="flex items-center rounded-xl border border-border bg-muted/40 p-1 shadow-2xs text-xs">
             <button
-              onClick={() => setViewMode("stage")}
+              onClick={() => handleViewModeChange("stage")}
               className={cn(
                 "flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-medium transition-all",
                 viewMode === "stage" 
@@ -192,7 +270,7 @@ export default function Showcase() {
             </button>
 
             <button
-              onClick={() => setViewMode("specs")}
+              onClick={() => handleViewModeChange("specs")}
               className={cn(
                 "flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-medium transition-all",
                 viewMode === "specs" 
@@ -200,12 +278,12 @@ export default function Showcase() {
                   : "text-muted-foreground hover:text-foreground"
               )}
             >
-              <ShieldCheck className="size-3.5" />
+              <ShieldCheck className="size-3.5 text-emerald-500" />
               <span>Specifications</span>
             </button>
 
             <button
-              onClick={() => setViewMode("code")}
+              onClick={() => handleViewModeChange("code")}
               className={cn(
                 "flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-medium transition-all",
                 viewMode === "code" 
@@ -213,7 +291,7 @@ export default function Showcase() {
                   : "text-muted-foreground hover:text-foreground"
               )}
             >
-              <Code2 className="size-3.5" />
+              <Code2 className="size-3.5 text-sky-500" />
               <span>Integration</span>
             </button>
           </div>
@@ -351,12 +429,18 @@ export default function Showcase() {
 
         {/* VIEW 2: DETAILED SPECS */}
         {viewMode === "specs" && (
-          <div className="max-w-5xl mx-auto w-full px-6 py-10">
+          <div id="specs" className="max-w-5xl mx-auto w-full px-6 py-10 scroll-mt-20">
             {/* Architectural Overview Card */}
-            <div className="rounded-2xl border bg-card p-6 sm:p-8 shadow-xs mb-8">
-              <span className="text-xs uppercase tracking-widest text-muted-foreground font-semibold block mb-2">
-                Architecture & Specifications
-              </span>
+            <div id="specifications" className="rounded-2xl border bg-card p-6 sm:p-8 shadow-xs mb-8 scroll-mt-20">
+              <div className="flex flex-wrap items-center justify-between gap-3 mb-2">
+                <span className="text-xs uppercase tracking-widest text-muted-foreground font-semibold block">
+                  Architecture & Specifications
+                </span>
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 px-2.5 py-0.5 text-[11px] font-medium">
+                  <CheckCircle2 className="size-3" />
+                  Specifications Active
+                </span>
+              </div>
               <h2 className="text-2xl font-bold tracking-tight text-foreground mb-3">
                 {record.title}
               </h2>
@@ -447,7 +531,7 @@ export default function Showcase() {
 
         {/* VIEW 3: INTEGRATION CODE */}
         {viewMode === "code" && (
-          <div className="max-w-4xl mx-auto w-full px-6 py-10 space-y-6">
+          <div id="code" className="max-w-4xl mx-auto w-full px-6 py-10 space-y-6 scroll-mt-20">
             {/* Step 1: Dependencies */}
             <div className="rounded-2xl border bg-card p-6 shadow-xs">
               <span className="text-xs uppercase tracking-widest text-muted-foreground font-semibold block mb-2">
