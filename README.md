@@ -96,7 +96,7 @@ Each of the 106 upstream-derived components has a static registry item hosted by
 
 ```bash
 # Example: Install component skipper24 into your project
-npx shadcn@latest add https://skipper-ui.vercel.app/r/skiper24.json
+npx shadcn@latest add https://skipper-ui.vercel.app/v1/preview/skipper24
 ```
 
 Browse the complete [Registry Index](https://skipper-ui.vercel.app/r/index.json). Registry items reference media hosted on the same origin. 
@@ -111,8 +111,6 @@ We provide an automated extraction utility to copy any component, its internal h
 # Export skipper24 to an external application directory
 npm run export:component skipper24 --dest ../my-new-app
 
-# Or use the one-p alias:
-npm run export:component -- skiper24 --dest ../my-new-app
 ```
 
 The script will:
