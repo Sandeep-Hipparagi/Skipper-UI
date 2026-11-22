@@ -43,6 +43,15 @@ Every component is architected to be portable, self-contained, fully typed, loca
 
 ---
 
+## Security & Verification Posture
+
+- **Full verification chain green**: `npm test` + `tsc --noEmit` + asset integrity verification + production `next build` (4 routes, type-checked).
+- **Zero production npm audit vulnerabilities** (`next` pinned to 15.5.29, clearing the SVG-rejection, HttpOnly-cookie, and cross-client response-injection advisories).
+- **100% local assets** — zero CDN dependencies; every asset digest-verified at build time.
+- Strict TypeScript; no `dangerouslySetInnerHTML` with dynamic content (theme bootstrap only).
+
+---
+
 ## Key Features
 
 - **107 Complete Interactive Primitives:** 106 verified upstream reconstructions spanning modern landing page interactions, micro-interactions, Apple-style dynamic islands, 3D WebGL hero scenes, physics-based gesture fields, and fluid carousels.
