@@ -1,6 +1,6 @@
 {
   "name": "skipper-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Reconstructed interactive motion components for Skipper UI",
   "author": "Sandeep Hipparagi",
   "license": "MIT",
@@ -12,6 +12,12 @@
   "bugs": {
     "url": "https://github.com/Sandeep-Hipparagi/Skipper-UI/issues"
   },
+  "files": [
+    "src",
+    "public/r",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "dev": "next dev",
     "prebuild": "npm run build:registry",
