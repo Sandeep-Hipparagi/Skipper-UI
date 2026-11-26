@@ -25,6 +25,12 @@
   🌐 <strong>Live Catalog & Interactive Explorer:</strong> <a href="https://skipper-ui.vercel.app"><strong>skipper-ui.vercel.app</strong></a>
 </p>
 
+## Product Walkthrough & Architecture Demo
+
+https://github.com/Sandeep-Hipparagi/Skipper-UI/releases/download/media-v1/brag.mp4
+
+[![Skipper-UI demo](assets/media/preview.webp)](https://github.com/Sandeep-Hipparagi/Skipper-UI/releases/tag/media-v1)
+
 ---
 
 <p align="center">
